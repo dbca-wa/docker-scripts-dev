@@ -3,7 +3,6 @@ Docker startup scripts for managing localised docker dev environments.
 
 
 
-# Windows Environment Requirements
-https://git-scm.com/download/win
+# Linux Environment Requirements
 
-https://docs.docker.com/desktop/windows/install/
+apt install docker-ce
