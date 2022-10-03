@@ -1,0 +1,2 @@
+docker stop wildlifelegacy-dev
+docker run --rm  --pull=always --name=wildlifelegacy-dev --env-file=env/wildlifelegacy.env --hostname wildlifelegacy-dev --mount type=bind,source=/data/data/dockerhome/,target=/home/docker/ --mount type=bind,source=/windata/,target=/windata/  --mount type=bind,source=/data/,target=/data/  -p 10.17.0.10:9031-9040:9031-9040 -p 10.17.0.10:2222:22 -p 10.17.0.10:7004:8080 -d -i -t dbcawa/docker_app_dev:wildlifelegacy_dev_2022.10.03.05.5636
