@@ -1,3 +1,3 @@
 #!/bin/bash
-docker exec -it boranga-dev bash
+docker exec -it boranga-dev su docker
 
