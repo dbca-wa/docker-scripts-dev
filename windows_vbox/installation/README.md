@@ -220,6 +220,15 @@ f) Select Done and Press Enter
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2015.png?raw=true)
 
+**Step 30: SSH Setup**
+
+a) Add an X next to Install OpenSSH Server   
+b) Select Done and Press Enter   
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2016.png?raw=true)
+
+
+
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
 # Install Docker
