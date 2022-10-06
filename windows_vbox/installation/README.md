@@ -209,6 +209,16 @@ a) Select Continue and Press Enter
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2014.png?raw=true)
 
 
+**Step 29: VM Profile Setup**
+
+a) Under Name Enter "Docker"   
+b) Under Your server name Enter "Docker"   
+c) Under Username Enter "docker"   
+d) Under Choose a password Enter "docker"   (you can choose your own password if you wish)
+e) Under Confirm your password Enter "docker"    (you can choose your own password if you wish)
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2015.png?raw=true)
+
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
 # Install Docker
