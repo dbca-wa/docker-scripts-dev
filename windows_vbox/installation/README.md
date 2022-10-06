@@ -132,14 +132,19 @@ b) Press Enter
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%203.png?raw=true)
 
-**Step 18: VM Language**
+**Step 18: VM Update Installer**
 
 a) Select "Update to the new installer" - May not get this option if you image is already the latest.  If so skip to next step
 b) Press Enter   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%204.png?raw=true)
 
+**Step 19: VM Key Board Layout**
 
+a) Both Layout and Variant should be English (US)
+b) Select Done and Press Enter  
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%205.png?raw=true)
 
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
