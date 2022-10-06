@@ -84,6 +84,13 @@ c) Change Paravirtualization Interface to "KVM"
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_system_acceleration.png?raw=true)
 
 
+**Step 12: VM Acceleration**
+
+a) Select Storage   
+b) Select Ubuntu 22.04 (docker).vdi
+c) Check Solid State Drive 
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_storage_controller_sata.png?raw=true)
 
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
