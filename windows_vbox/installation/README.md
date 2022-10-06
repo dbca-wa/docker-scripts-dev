@@ -15,8 +15,9 @@ c) Click Apply and Close.
 ![alt text](https://raw.githubusercontent.com/dbca-wa/docker-scripts-dev/main/windows_vbox/installation/images/file__host_network_adapter.png)
 
 
-**Step 3: Setup Host Adapter**
+**Step 3: Create New VM**
 
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_new_docker_vm.png?raw=true)
 
 
 
