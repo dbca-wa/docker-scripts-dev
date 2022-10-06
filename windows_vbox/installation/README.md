@@ -120,56 +120,56 @@ b) Click Start
 
 **Step 16: VM Running**
 
-a) Select (with aarow keys) "Try or Install Ubunutu Server 
+a) Select (with aarow keys) "Try or Install Ubunutu Server    
 b) Press Enter   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%202.png?raw=true)
 
 **Step 17: VM Language**
 
-a) Select (with aarow keys) "English" 
+a) Select (with aarow keys) "English"   
 b) Press Enter   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%203.png?raw=true)
 
 **Step 18: VM Update Installer**
 
-a) Select "Update to the new installer" - May not get this option if you image is already the latest.  If so skip to next step
+a) Select "Update to the new installer" - May not get this option if you image is already the latest.  If so skip to next step   
 b) Press Enter   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%204.png?raw=true)
 
 **Step 19: VM Key Board Layout**
 
-a) Both Layout and Variant should be English (US)
+a) Both Layout and Variant should be English (US)   
 b) Select Done and Press Enter  
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%205.png?raw=true)
 
 **Step 20: VM Install Type**
 
-a) X should be selected on Ubuntu Server
+a) X should be selected on Ubuntu Server   
 b) Select Done and Press Enter  
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%206.png?raw=true)
 
 **Step 21: VM Network**
 
-a) Should see at least one interface configuration
+a) Should see at least one interface configuration   
 b) Select Done and Press Enter  
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%207.png?raw=true)
 
 **Step 22: VM Proxy**
 
-a) Proxy Address should be empty
+a) Proxy Address should be empty   
 b) Select Done and Press Enter  
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%208.png?raw=true)
 
 **Step 23: VM Ubuntu Mirror Location**
 
-a) Mirror address should be an au archive.
+a) Mirror address should be an au archive.   
 b) Select Done and Press Enter  
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%209.png?raw=true)
