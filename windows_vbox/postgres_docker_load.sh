@@ -21,6 +21,13 @@ else
    sudo mkdir "/linuxdata/postgres-dev/"
 fi
 
+if [ -d "/linuxdata/postgres-dev/data" ]
+then
+   echo "Directory Exists /linuxdata/postgres-dev/data"
+else
+   sudo mkdir "/linuxdata/postgres-dev/data"
+fi
+
 if [ -d "/windata" ]
 then
    echo "Directory Exists /windata"
