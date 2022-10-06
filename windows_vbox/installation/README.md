@@ -239,6 +239,15 @@ a) Wait for installation to complete go to step 33
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2018.png?raw=true)
 
+**Step 33: Installing System**
+
+a) Once Installation is complete "Reboot Now" will appear under "View Full Log"
+b) Select Reboot Now and Press Enter
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2019.png?raw=true)
+
+
+
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
 # Install Docker
