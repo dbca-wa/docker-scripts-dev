@@ -37,6 +37,13 @@ b) Click Next
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_new_docker_memory_vm.png?raw=true)
 
+**Step 6: Create New VM Hard disk file type**
+
+a) Select VDI (VirtualBox Disk Image)
+b) Click Next   
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_new_docker_storage_type_vm.png?raw=true)
+
 
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
