@@ -44,6 +44,13 @@ b) Click Next
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_new_docker_storage_type_vm.png?raw=true)
 
+**Step 8: Create New VM Hard disk physical type**
+
+a) Select Dynamically Allocated
+b) Click Next   
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_new_docker_storage_type2_vm.png?raw=true)
+
 
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
