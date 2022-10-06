@@ -60,7 +60,7 @@ b) Click Create
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_new_docker_storage_size_vm.png?raw=true)
 
 
-**Step 9: VM Settings*
+**Step 9: VM Settings**
 
 a) Select the New VM Created from the left panel
 b) Click Settings from the top bar.
