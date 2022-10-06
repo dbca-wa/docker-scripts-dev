@@ -146,6 +146,37 @@ b) Select Done and Press Enter
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%205.png?raw=true)
 
+**Step 20: VM Install Type**
+
+a) X should be selected on Ubuntu Server
+b) Select Done and Press Enter  
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%206.png?raw=true)
+
+**Step 21: VM Network**
+
+a) Should see at least one interface configuration
+b) Select Done and Press Enter  
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%207.png?raw=true)
+
+**Step 22: VM Proxy**
+
+a) Proxy Address should be empty
+b) Select Done and Press Enter  
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%208.png?raw=true)
+
+**Step 23: VM Ubuntu Mirror Location**
+
+a) Mirror address should be an au archive.
+b) Select Done and Press Enter  
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%209.png?raw=true)
+
+
+
+
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
 # Install Docker
