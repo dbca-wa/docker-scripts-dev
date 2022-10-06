@@ -102,6 +102,12 @@ d) click ok
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_storage_controller_install_image.png?raw=true)
 
+**Step 14: VM Start**
+
+a) Select "Ubuntu 22.04 (docker)"
+b) Click Start
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%201.png?raw=true)
 
 
 # Download putty (inside this repo or latest version online or use windows Terminal)
