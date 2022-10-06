@@ -4,28 +4,28 @@ if [ -d "/data" ]
 then
    echo "Directory Exists /data"
 else
-   mkdir "/data"
+   sudo mkdir "/data"
 fi
 
 if [ -d "/linuxdata" ]
 then
    echo "Directory Exists /linuxdata"
 else
-   mkdir "/linuxdata"
+   sudo mkdir "/linuxdata"
 fi
 
 if [ -d "/linuxdata/postgres-dev/" ]
 then
    echo "Directory Exists /linuxdata/postgres-dev/"
 else
-   mkdir "/linuxdata/postgres-dev/"
+   sudo mkdir "/linuxdata/postgres-dev/"
 fi
 
 if [ -d "/windata" ]
 then
    echo "Directory Exists /windata"
 else
-   mkdir "/windata"
+   sudo mkdir "/windata"
 fi
 
 docker stop postgres-dev
