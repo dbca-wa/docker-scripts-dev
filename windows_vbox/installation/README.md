@@ -110,6 +110,30 @@ b) Click Start
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%201.png?raw=true)
 
 
+**Step 15: VM Start**
+
+a) Select "Ubuntu 22.04 (docker)"   
+b) Click Start   
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%201.png?raw=true)
+
+
+**Step 16: VM Running**
+
+a) Select (with aarow keys) "Try or Install Ubunutu Server 
+b) Press Enter   
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%202.png?raw=true)
+
+**Step 17: VM Language**
+
+a) Select (with aarow keys) "English" 
+b) Press Enter   
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%203.png?raw=true)
+
+
+
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
 # Install Docker
