@@ -21,7 +21,7 @@ a) Click NEW Button
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_new_docker_vm.png?raw=true)
 
-**Step 4: Create New VM**
+**Step 4: Create New VM Naming**
 
 a) Enter under Name "Ubuntu 22.04 (docker)   
 b) Drop down should match screenshot   
@@ -29,6 +29,13 @@ c) Click Next
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_new_docker_os_vm.png?raw=true)
 
+
+**Step 5: Create New VM Memory**
+
+a) Select 2048 of Memory (you can choose more if you wish)  
+b) Click Next   
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_new_docker_memory_vm.png?raw=true)
 
 
 # Download putty (inside this repo or latest version online or use windows Terminal)
