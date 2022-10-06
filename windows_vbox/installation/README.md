@@ -10,7 +10,7 @@ Click File --> Host Network Manager
 
 a) Click Create and then Select the Adapter ending with #2.  
 b) In the bottom box change the adapter IPV4 address to 10.17.0.1.
-c) Click Apply and Close
+c) Click Apply and Close.
 
 ![alt text](https://raw.githubusercontent.com/dbca-wa/docker-scripts-dev/main/windows_vbox/installation/images/file__host_network_adapter.png)
 
