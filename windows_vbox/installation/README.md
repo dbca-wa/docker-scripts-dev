@@ -104,8 +104,8 @@ d) click ok
 
 **Step 14: VM Start**
 
-a) Select "Ubuntu 22.04 (docker)"
-b) Click Start
+a) Select "Ubuntu 22.04 (docker)"   
+b) Click Start   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%201.png?raw=true)
 
