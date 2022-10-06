@@ -195,6 +195,11 @@ b) Select Save and Press Enter
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2012.png?raw=true)
 
+**Step 27: VM Configure Storage Complete**
+
+a) Select Save and Press Enter   
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2013.png?raw=true)
 
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
