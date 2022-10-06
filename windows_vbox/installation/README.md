@@ -186,8 +186,15 @@ b) Select Done and Press Enter
 a) In the screenshot where is says LVM volume group (make note of that numberm we will need it in the next step)   
 b) Using the arrow keys select the number next to mounted at /   
 
-
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2011.png?raw=true)
+
+**Step 26: VM Configure Storage Space Amount**
+
+a) In the size box enter the amount you wrote down in Step 25.   
+b) Select Save and Press Enter   
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2012.png?raw=true)
+
 
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
