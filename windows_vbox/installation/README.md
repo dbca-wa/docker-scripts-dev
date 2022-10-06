@@ -246,7 +246,7 @@ b) Select Reboot Now and Press Enter
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2019.png?raw=true)
 
-
+## NOW AT IMAGE 20
 
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
