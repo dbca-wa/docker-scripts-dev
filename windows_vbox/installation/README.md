@@ -336,7 +336,7 @@ git clone https://github.com/dbca-wa/docker-scripts-dev.git
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2030.png?raw=true)
 
-**Step 44: GIT Check out docker system run scripts*
+**Step 44: GIT Check out docker system run scripts**   
 
 a) Change Directory "cd docker-scripts-dev/windows_vbox"   
 b) run command "mkdir env"   
