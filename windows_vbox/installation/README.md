@@ -311,6 +311,24 @@ b) you will be ask for the password created at step 29. Please enter the passwor
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2028.png?raw=true)
 
+**Step 42: Check Docker Installation is Complete**
+
+a) enter at the prompt "docker ps" and press enter to conifrm docker is installed correctly.
+b) You should see a similar response to the screenshot.
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2029.png?raw=true)
+
+**Step 43: GIT Check out docker system run scripts*
+
+a) Run the follow command to pull a copy the dbca docker scripts:  (this should be run while in your home directory)
+```
+git clone https://github.com/dbca-wa/docker-scripts-dev.git
+```
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2030.png?raw=true)
+
+
+
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
 # Install Docker
