@@ -336,11 +336,12 @@ b) run command "mkdir env"
 
 **Step 45: Start Postgres Server*
 
-a) Run "./postgres_docker_load.sh (you might need to 'chmod 755 postgres_docker_load.sh' this file)
+a) Run "./postgres_docker_load.sh (you might need to 'chmod 755 postgres_docker_load.sh' this file)   
+b) Run "docker ps" to check the postgres container is running (see screenshot)   
+c) Run "../tools/connect_postgres.sh" (this will allow you to connect into the container) - your prompt should change  
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2032.png?raw=true)
-
-
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2033.png?raw=true)
 
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
