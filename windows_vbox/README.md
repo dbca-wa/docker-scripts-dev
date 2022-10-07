@@ -18,6 +18,6 @@ Ledger: 2224
 Boranga: 2222
 Wildlife Legacy: 2225
 
-# Installation Instructions available in installation directory.
+# Installation Instructions
 https://github.com/dbca-wa/docker-scripts-dev/tree/main/windows_vbox/installation
 
