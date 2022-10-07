@@ -385,8 +385,4 @@ e) You should now a map drive to windows that will let you share files between y
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2038.png?raw=true)
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2039.png?raw=true)
 
-# Download putty (inside this repo or latest version online or use windows Terminal)
-
-# Install Docker
-curl https://raw.githubusercontent.com/dbca-wa/docker-scripts-dev/main/windows_vbox/installation/docker-install.sh | bash
-
+**Completed**
