@@ -13,9 +13,9 @@ Boranga: 9000-9010 http://10.17.0.10:9001
 Wildlife Legacy: 9041-9050 http://10.17.0.10:9041  
 
 **Container SSH Ports**   
-Postgres: 2223  
-Ledger: 2224
-Boranga: 2222
+Postgres: 2223    
+Ledger: 2224   
+Boranga: 2222   
 Wildlife Legacy: 2225
 
 # Installation Instructions
