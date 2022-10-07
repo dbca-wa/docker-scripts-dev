@@ -320,12 +320,25 @@ b) You should see a similar response to the screenshot.
 
 **Step 43: GIT Check out docker system run scripts*
 
-a) Run the follow command to pull a copy the dbca docker scripts:  (this should be run while in your home directory)
+a) Run the follow command to pull a copy the dbca docker scripts:  (this should be run while in your home directory)   
 ```
 git clone https://github.com/dbca-wa/docker-scripts-dev.git
 ```
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2030.png?raw=true)
+
+**Step 44: GIT Check out docker system run scripts*
+
+a) Change Directory "cd docker-scripts-dev/windows_vbox"   
+b) run command "mkdir env"   
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2031.png?raw=true)
+
+**Step 45: Start Postgres Server*
+
+a) Run "./postgres_docker_load.sh (you might need to 'chmod 755 postgres_docker_load.sh' this file)
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2032.png?raw=true)
 
 
 
