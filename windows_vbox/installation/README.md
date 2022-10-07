@@ -260,14 +260,14 @@ a) Login with the username and password created in step 29
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2020.png?raw=true)
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2021.png?raw=true)
 
-**Step 36: Installation complete (Login)**
+**Step 36: Edit Network Config**
 
 a) Login into the system as root "sudo su"   
 b) edit file "vi /etc/netplan/00-installer-config.yaml"   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2022.png?raw=true)
 
-**Step 37: Installation complete (Login)**
+**Step 37: Update Network Config**
 
 a) At line 6 we need to insert 3 new lines with correct tabing (see screenshot)
 ```
@@ -280,7 +280,15 @@ b) Save and exit.
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2023.png?raw=true)
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2024.png?raw=true)
 
+**Step 38: VM Reboot**
 
+a) Enter "Reboot" and press Enter
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2025.png?raw=true)
+
+
+
+https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2025.png?raw=true
 
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
