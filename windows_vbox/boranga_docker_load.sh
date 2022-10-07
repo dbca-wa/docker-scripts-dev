@@ -1,3 +1,11 @@
+#!/bin/bash
+
+DOCKER_IMAGE="dbcawa/docker_app_dev:boranga_dev_latest"
+INSTANCE_NAME="boranga-dev"
+CONTAINER_WEB_PORT="7002"
+DEVPORTS="9000-9010"
+SSHPORT="2222"
+ENV_FILE="env/boranga.env"
+
 docker stop boranga-dev
-#docker run --rm --name=boranga-dev --env-file=env/boranga.env --hostname boranga-dev   --mount type=bind,source=/windata/,target=/windata/  --mount type=bind,source=/data/,target=/data/  --mount type=bind,source=/data/data/dockerhome,target=/home/docker -p 10.17.0.10:9000-9010:9000-9010 -p 10.17.0.10:2222:22 -p 10.17.0.10:7002:8080 -d -i -t dbcawa/docker_app_dev:boranga_dev_latest
-docker run --rm  --pull=always --name=boranga-dev --env-file=env/boranga.env --hostname boranga-dev  --mount type=bind,source=/data/data/dockerhome/,target=/home/docker/ --mount type=bind,source=/windata/,target=/windata/  --mount type=bind,source=/data/,target=/data/  -p 10.17.0.10:9000-9010:9000-9010 -p 10.17.0.10:2222:22 -p 10.17.0.10:7002:8080 -d -i -t dbcawa/docker_app_dev:boranga_dev_latest
+docker run --rm  --pull=always --name=$INSTANCE_NAME --env-file=$ENV_FILE --hostname $INSTANCE_NAME  --mount type=bind,source=/data/data/dockerhome/,target=/home/docker/ --mount type=bind,source=/windata/,target=/windata/  --mount type=bind,source=/data/,target=/data/  -p 10.17.0.10:$DEVPORTS:$DEVPORTS -p 10.17.0.10:$SSHPORT:22 -p 10.17.0.10:$CONTAINER_WEB_PORT:8080 -d -i -t $DOCKER_IMAGE
