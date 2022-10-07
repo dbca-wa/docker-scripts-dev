@@ -214,7 +214,7 @@ a) Select Continue and Press Enter
 a) Under Name Enter "Docker"   
 b) Under Your server name Enter "Docker"   
 c) Under Username Enter "docker"   
-d) Under Choose a password Enter "docker"   (you can choose your own password if you wish)
+d) Under Choose a password Enter "docker"   (you can choose your own password if you wish)   
 e) Under Confirm your password Enter "docker"    (you can choose your own password if you wish)   
 f) Select Done and Press Enter   
 
@@ -246,7 +246,13 @@ b) Select Reboot Now and Press Enter
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2019.png?raw=true)
 
-## NOW AT IMAGE 20
+**Step 34: Installation complete (Login)**
+
+a) Login with the username and password created in step 29   
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2020.png?raw=true)
+
+
 
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
