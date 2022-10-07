@@ -307,6 +307,7 @@ a) Enter the following command into the putty screen and press enter. You should
 ```
 curl https://raw.githubusercontent.com/dbca-wa/docker-scripts-dev/main/windows_vbox/installation/docker-install.sh | bash
 ```
+b) you will be ask for the password created at step 29. Please enter the password and press enter (asterisk or characters will not appear while entering the password)
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2028.png?raw=true)
 
