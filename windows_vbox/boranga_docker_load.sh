@@ -8,6 +8,7 @@ SSHPORT="2222"
 ENV_FILE="env/boranga.env"
 
 if [ "$1" ]
+then
       DOCKER_IMAGE=$1
       echo "\$1 is NOT empty"
 fi
