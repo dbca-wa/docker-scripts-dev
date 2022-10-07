@@ -19,5 +19,5 @@ Boranga: 2222
 Wildlife Legacy: 2225
 
 # Installation Instructions available in installation directory.
-dsdas
+https://github.com/dbca-wa/docker-scripts-dev/tree/main/windows_vbox/installation
 
