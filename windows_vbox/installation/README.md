@@ -343,7 +343,7 @@ b) run command "mkdir env"
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2031.png?raw=true)
 
-**Step 45: Start Postgres Server*
+**Step 45: Start Postgres Server**  
 
 a) Run "./postgres_docker_load.sh" (you might need to 'chmod 755 postgres_docker_load.sh' this file)   
 b) Run "docker ps" to check the postgres container is running (see screenshot)   
@@ -352,28 +352,28 @@ c) Run "../tools/connect_postgres.sh" (this will allow you to connect into the c
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2032.png?raw=true)
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2033.png?raw=true)
 
-**Step 46: Start Postgres Server*
+**Step 46: Start Postgres Server**   
 
 a) Run "./create-new-postgres.sh" (This will create your postgres database inside the container,  never run this if you have a database setup as it will wipe your databases)  
 b) Run "exit" So you can leave the container and go back to docker@dockerdev:~ prompt
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2034.png?raw=true)
 
-**Step 47: Start Webdav Server*
+**Step 47: Start Webdav Server**   
 
 a) Run "./webdav_docker_load.sh" (this will allow you to share files from windows into the containers)   
 b) Run "docker ps" to check the webdav container is running (see screenshot)   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2034.png?raw=true)
 
-**Step 48: Check Webdav Server*
+**Step 48: Check Webdav Server**   
 
 a) Open your browser (chrome,firefox) and enter this url "http://10.17.0.10:6999/webdav"   
 b) You should receive a simliar page to the screenshot to confirm the webdav server is working.   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2036.png?raw=true)
 
-**Step 49: Create share drive in windows*
+**Step 49: Create share drive in windows**   
 
 a) In Windows File Manager right click "This PC" and click "Map network drive"   
 b) Select Drive (Maybe M:)   
