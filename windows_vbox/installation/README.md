@@ -286,9 +286,29 @@ a) Enter "Reboot" and press Enter
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2025.png?raw=true)
 
+**Step 39: SSH to VM (Putty)**
+
+a) Open Putty (Putty can be downloaded from within this repo)   
+b) Enter "10.17.0.10" into Host Name , Saved Session and click Save   
+c) Double Click 10.17.0.10 at reference Point 4 in screensheet.   
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2026.png?raw=true)
+
+**Step 40: SSH to VM (Login)**
+
+a) At prompt enter login details that were created at step 29 and login.    When entering the password you will not see asterisks or characters appear.   
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2027.png?raw=true)
 
 
-https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2025.png?raw=true
+**Step 41: Install Docker**
+
+a) Enter the following command into the putty screen and press enter. You should be able to copy and paste the following command (putty accept right mouse click for paste)
+```
+curl https://raw.githubusercontent.com/dbca-wa/docker-scripts-dev/main/windows_vbox/installation/docker-install.sh | bash
+```
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2028.png?raw=true)
 
 # Download putty (inside this repo or latest version online or use windows Terminal)
 
