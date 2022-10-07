@@ -271,7 +271,7 @@ b) edit file "vi /etc/netplan/00-installer-config.yaml"
 
 a) At line 6 we need to insert 3 new lines with correct tabing (see screenshot)
 ```
-    enp0s8   
+    enp0s8:   
        dhcp4: false    
        addresses: [10.17.0.10/24]    
 ```   
