@@ -10,7 +10,7 @@ ENV_FILE="env/boranga.env"
 if [ "$1" ]
 then
       DOCKER_IMAGE=$1
-      echo "Loading Image \$1"
+      echo "Loading Image: $1"
 fi
 
 
