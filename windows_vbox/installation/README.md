@@ -251,6 +251,33 @@ b) Select Reboot Now and Press Enter
 a) Login with the username and password created in step 29   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2020.png?raw=true)
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2021.png?raw=true)
+
+**Step 35: VM Login**
+
+a) Login with the username and password created in step 29   
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2020.png?raw=true)
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2021.png?raw=true)
+
+**Step 36: Installation complete (Login)**
+
+a) Login into the system as root "sudo su"   
+b) edit file "vi /etc/netplan/00-installer-config.yaml"   
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2022.png?raw=true)
+
+**Step 37: Installation complete (Login)**
+
+a) At line 6 we need to insert 3 new lines with correct tabing (see screenshot)
+```enp0s8   
+    dhcp4: false    
+    addresses: [10.17.0.10/24]    
+```   
+b) Save and exit.   
+
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2023.png?raw=true)
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2024.png?raw=true)
 
 
 
