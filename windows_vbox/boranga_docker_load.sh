@@ -9,8 +9,9 @@ ENV_FILE="env/boranga.env"
 
 if [ -z "$1" ]
 then
-      echo "\$1 is empty"
+      
 else
+      DOCKER_IMAGE=$1
       echo "\$1 is NOT empty"
 fi
 
