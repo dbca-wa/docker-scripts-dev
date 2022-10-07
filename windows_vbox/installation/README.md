@@ -1,3 +1,12 @@
+**Required Files:**
+
+Ubuntu 22.04 Can be downloaded here:   
+https://ubuntu.com/download/server   
+
+Putty SSH Client can be downloaded here:   
+https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/putty.exe?raw=true   
+    
+   
 **Step 1. Install Virtual Box**
 
 https://www.virtualbox.org/wiki/Downloads
