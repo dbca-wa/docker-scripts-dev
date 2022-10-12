@@ -1,10 +1,10 @@
 #!/bin/bash
 
-DOCKER_IMAGE="dbcawa/docker_app_dev:wildlifelegacy_dev_2022.10.03.09.3018"
-INSTANCE_NAME="wildlifelegacy-dev"
-CONTAINER_WEB_PORT="7005"
-DEVPORTS="9041-9050"
-SSHPORT="2225"
+DOCKER_IMAGE="dbcawa/docker_app_dev:disturbance_dev_2022.10.12.07.0541"
+INSTANCE_NAME="disturbance-dev"
+CONTAINER_WEB_PORT="7007"
+DEVPORTS="9061-9070"
+SSHPORT="2227"
 ENV_FILE="env/boranga.env"
 
 if [ "$1" ]
