@@ -18,8 +18,8 @@ Wildlife Legacy: 9051-9060 http://10.17.0.10:9051
 Postgres: 2223    
 Ledger: 2224   
 Boranga: 2222   
-Wildlife Legacy: 2225
-Wildlife Complance: 2226
+Wildlife Legacy: 2225  
+Wildlife Complance: 2226   
 
 # Installation Instructions
 https://github.com/dbca-wa/docker-scripts-dev/tree/main/windows_vbox/installation
