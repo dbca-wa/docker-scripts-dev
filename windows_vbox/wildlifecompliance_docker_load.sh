@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DOCKER_IMAGE="dbcawa/docker_app_dev:wildlifecompliance_dev_2022.10.12.06.3414"
-INSTANCE_NAME="wildlifecomplance-dev"
+INSTANCE_NAME="wildlifecompliance-dev"
 CONTAINER_WEB_PORT="7006"
 DEVPORTS="9051-9060"
 SSHPORT="2226"
