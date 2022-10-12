@@ -5,7 +5,7 @@ INSTANCE_NAME="wildlifecomplance-dev"
 CONTAINER_WEB_PORT="7006"
 DEVPORTS="9051-9060"
 SSHPORT="2226"
-ENV_FILE="env/compliance.env"
+ENV_FILE="env/wildlifecompliance.env"
 
 if [ "$1" ]
 then
