@@ -5,7 +5,7 @@ INSTANCE_NAME="disturbance-dev"
 CONTAINER_WEB_PORT="7007"
 DEVPORTS="9061-9070"
 SSHPORT="2227"
-ENV_FILE="env/boranga.env"
+ENV_FILE="env/disturbance.env"
 
 if [ "$1" ]
 then
