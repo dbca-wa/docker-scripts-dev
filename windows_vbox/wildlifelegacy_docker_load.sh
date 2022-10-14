@@ -5,7 +5,7 @@ INSTANCE_NAME="wildlifelegacy-dev"
 CONTAINER_WEB_PORT="7005"
 DEVPORTS="9041-9050"
 SSHPORT="2225"
-ENV_FILE="env/boranga.env"
+ENV_FILE="env/wildlifelegacy.env"
 
 if [ "$1" ]
 then
