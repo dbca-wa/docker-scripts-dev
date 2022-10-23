@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DOCKER_IMAGE="dbcawa/docker_app_dev:gis_kaartdijin_boodja_latest"
-INSTANCE_NAME="boranga-dev"
+INSTANCE_NAME="gis-kaartdijin-boodja-dev"
 CONTAINER_WEB_PORT="7008"
 DEVPORTS="9071-9080"
 SSHPORT="2228"
