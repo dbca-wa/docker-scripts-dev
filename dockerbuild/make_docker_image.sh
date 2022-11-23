@@ -4,6 +4,7 @@ DATE_VAR=$(date +%Y.%m.%d.%H.%M%S)
 GIT_REPO=$1
 GIT_BRANCH=$2
 DOCKER_REPO=$3
+DOCKER_LATEST="latest"
 docker login
 
 if [ -d "$HOME/gittmp" ]
@@ -26,9 +27,9 @@ if [ -f "$HOME/gittmp/docker_repo_name" ]; then
      DOCKER_REPO=$(<$HOME/gittmp/docker_repo_name)
      echo $DOCKER_REPO;
      cd $HOME/gittmp/
-     docker image build  --tag  dbcawa/$DOCKER_REPO:latest . ;
+     docker image build  --tag  dbcawa/$DOCKER_REPO:$GIT_BRANCH$DOCKER_LATEST . ;
      docker tag dbcawa/$DOCKER_REPO:latest dbcawa/$DOCKER_REPO:$DATE_VAR;
-     docker image push dbcawa/$DOCKER_REPO:latest;
+     docker image push dbcawa/$DOCKER_REPO:$GIT_BRANCH$DOCKER_LATEST;
      docker image push dbcawa/$DOCKER_REPO:$DATE_VAR;
 
 else
