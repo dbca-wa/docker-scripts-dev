@@ -1,6 +1,6 @@
 # Docker Build Script
 
-Below are some examples command for building a docker image.   You need to create a file in your repo with docker repo name in it.   The file you need to create is 'docker_repo_name' in the root directory of your repo.
+Below are some examples command for building a docker image.   You need to create a file in your repo with your docker repo name in it for your project.   The file you need to create is 'docker_repo_name' in the root directory of your repo.
 
 
 # Build and image from the main/master repo
