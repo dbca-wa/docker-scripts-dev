@@ -2,7 +2,7 @@
 
 DOCKER_IMAGE="dbcawa/docker_app_dev:park-passes_dev_latest"
 INSTANCE_NAME="parkpasses-dev"
-CONTAINER_WEB_PORT="7002"
+CONTAINER_WEB_PORT="7009"
 DEVPORTS="9081-9090"
 SSHPORT="2229"
 ENV_FILE="env/parkpasses.env"
