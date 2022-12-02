@@ -1,11 +1,11 @@
 #!/bin/bash
 
-DOCKER_IMAGE="dbcawa/docker_app_dev:boranga_dev_latest"
-INSTANCE_NAME="boranga-dev"
+DOCKER_IMAGE="dbcawa/docker_app_dev:park-passes_dev_latest"
+INSTANCE_NAME="parkpasses-dev"
 CONTAINER_WEB_PORT="7002"
-DEVPORTS="9000-9010"
-SSHPORT="2222"
-ENV_FILE="env/boranga.env"
+DEVPORTS="9081-9090"
+SSHPORT="2229"
+ENV_FILE="env/parkpasses.env"
 
 if [ "$1" ]
 then
