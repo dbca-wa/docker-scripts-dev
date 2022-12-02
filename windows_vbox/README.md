@@ -33,3 +33,8 @@ Park Passes: 2229
 # Installation Instructions
 https://github.com/dbca-wa/docker-scripts-dev/tree/main/windows_vbox/installation
 
+# Update .bashrc to allow scripts to be executed anywhere.  Add the two export lines to the end of the .bashrc
+
+vi ~/.bashrc
+export PATH=~/docker-scripts-dev/windows_vbox:$PATH
+export PATH=~/docker-scripts-dev/tools:$PATH
