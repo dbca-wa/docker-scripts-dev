@@ -2,7 +2,7 @@
 
 SCRIPT=$(readlink -f $0)
 SCRIPTPATH=`dirname $SCRIPT`
-DOCKER_IMAGE="dbcawa/docker_app_dev:wildlifecompliance_dev_2022.10.12.06.3414"
+DOCKER_IMAGE="dbcawa/docker_app_dev:wildlifecompliance_dev_docker"
 INSTANCE_NAME="wildlifecompliance-dev"
 CONTAINER_WEB_PORT="7006"
 DEVPORTS="9051-9060"
