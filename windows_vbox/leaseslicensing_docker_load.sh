@@ -7,7 +7,7 @@ INSTANCE_NAME="leaseslicensing-dev"
 CONTAINER_WEB_PORT="7008"
 DEVPORTS="9071-9080"
 SSHPORT="2228"
-ENV_FILE="env/leaseslicensing.env"
+ENV_FILE="/env/leaseslicensing.env"
 
 if [ "$1" ]
 then
