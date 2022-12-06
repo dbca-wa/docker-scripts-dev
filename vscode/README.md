@@ -1,39 +1,39 @@
 # Run and debug in Visual Studio Code
 
-## Installation
+## 1. Installation
 
-### Install extensions
+### 1.1 Install extensions
 
-#### Python:
+#### 1.1.1 Python:
 
 <img src="./media/image1.png" style="width:6.26806in;height:3.13681in"
 alt="Graphical user interface, text, website Description automatically generated" />
 
-#### Remote – SSH:
+#### 1.1.2 Remote – SSH:
 
 <img src="./media/image2.png" style="width:6.26806in;height:3.2875in"
 alt="Graphical user interface, text Description automatically generated" />
 
-#### Dev Containers:
+#### 1.1.3 Dev Containers:
 
 <img src="./media/image3.png" style="width:6.26806in;height:2.94306in"
 alt="Graphical user interface, text Description automatically generated" />
 
-#### Summary
+#### 1.1.4 Summary
 
 Should have these extensions installed:
 
 <img src="./media/image4.png" style="width:2.35429in;height:3.25711in"
 alt="Graphical user interface Description automatically generated" />
 
-### Check installation
+### 1.2 Check installation
 
-#### Connect to the remote VM and check the setup is working
+#### 1.2.1 Connect to the remote VM and check the setup is working
 
 This assumes the respective container is already running on the VM, e.g.
 in a terminal.
 
-#### SSH connect to the VM
+#### 1.2.2 SSH connect to the VM
 
 Either click the green button in the bottom left corner or invoke the
 command palette (CTRL+SHIFT+P, F1) …
@@ -51,7 +51,7 @@ password when prompted for:
 <img src="./media/image7.png" style="width:2.16678in;height:0.36807in"
 alt="Graphical user interface Description automatically generated" />
 
-#### Connect to the Docker container
+#### 1.2.3 Connect to the Docker container
 
 This opens a new VSCode window. Select Remote Explorer from the left
 menu bar and chose Containers from the top REMOTE EXPLORER drop down
@@ -71,9 +71,9 @@ directory:
 <img src="./media/image10.png"
 style="width:6.26806in;height:2.26528in" />
 
-## Configuration
+## 2. Configuration
 
-### Manually point VSCode to the correct container user and project root
+### 2.1 Manually point VSCode to the correct container user and project root
 
 This step can be omitted, because we want VSCode to automatically start
 the container when opening the project, and it’s left here for
@@ -88,7 +88,7 @@ alt="Graphical user interface, text, application Description automatically gener
 In the json configuration file edit the workspaceFolder and remoteUser
 keys and save the file:
 
-```json
+```
 {
     "workspaceFolder": "/data/data/projects/leases-licensing",
     "remoteUser": "docker"
@@ -104,7 +104,7 @@ like root, something went wrong.
 <img src="./media/image12.png" style="width:5.05582in;height:0.73615in"
 alt="Text Description automatically generated" />
 
-### Environment
+### 2.2 Environment
 
 Create a /vscode-env/leaseslicensing.env environment file and replace
 the three instances of YOUR.NAME with your name. This is the same env
@@ -136,11 +136,11 @@ ALLOWED_HOSTS=['*']
 DEV_APP_BUILD_URL="http://10.17.0.10:9073/static/leaseslicensing_vue/js/app.js"
 ENABLE_DJANGO_LOGIN=True
 ```
-### Dev-container
+### 2.3 Dev-container
 
 Edit or create and edit .devcontainer/devcontainer.json
 
-```json
+```
 {
     "name": "Leases Licensing",
     "image": "dbcawa/docker_app_dev:leaseslicensing_dev_latest",
@@ -160,7 +160,7 @@ as .vscode
 <img src="./media/image13.png" style="width:1.64592in;height:1.12506in"
 alt="A screenshot of a computer Description automatically generated with low confidence" />
 
-### Check configuration
+### 2.4 Check configuration
 
 Reopening (or opening) a folder at the project root should now have
 VSCode automatically pick up the .devcontainer configuration file and
@@ -175,9 +175,9 @@ alt="Graphical user interface, text, application Description automatically gener
 Maybe for this to work it is required to locally install the Docker
 Desktop app, and VSCode will prompt for the install.
 
-## Run the Django Server
+## 3. Django Server
 
-### Launch configuration
+### 3.1 Launch configuration
 
 In the Run and Debug view chose create a launch.json file or directly
 edit the file.
@@ -190,7 +190,7 @@ alt="Graphical user interface, application Description automatically generated" 
 
 The launch.json should look like the following:
 
-```json
+```
 {
     "version": "0.2.0",
     "configurations": [
@@ -209,7 +209,7 @@ The launch.json should look like the following:
   }
 ```
 
-### Server launch
+### 3.2 Server launch
 
 In Run and Debug chose Python: Django (or whatever has been chosen as
 name):
@@ -225,7 +225,7 @@ be checked for correct execution:
 <img src="./media/image20.png" style="width:5.31972in;height:1.42368in"
 alt="Text Description automatically generated" />
 
-### Open project in browser
+### 3.3 Open project in browser
 
 After starting the server, VSCode should prompt for opening the app in a
 browser:
@@ -244,7 +244,7 @@ machine, allowing to access the app in a browser:
 <img src="./media/image23.png" style="width:5.65307in;height:2.93071in"
 alt="Graphical user interface, text, application, chat or text message Description automatically generated" />
 
-##  Additional Setups
+## 4. Additional Setups
 
 To also run the node server on container start, add the following line
 to devcontainer.json:
@@ -255,7 +255,7 @@ to devcontainer.json:
 &'"
 ```
 
-## TODO
+## 5. TODO
 
 - SSH-key server login
 - Also start other containers (ledger, postgres) in VSCode
