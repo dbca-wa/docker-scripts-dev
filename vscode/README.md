@@ -244,7 +244,72 @@ machine, allowing to access the app in a browser:
 <img src="./media/image23.png" style="width:5.65307in;height:2.93071in"
 alt="Graphical user interface, text, application, chat or text message Description automatically generated" />
 
-## 4. Additional Setups
+## 4. Node server
+
+Adds a dropdown menu item to run a node server, automatically start the app in a browser and enables debugging in frontend files (html, js, vue).
+
+### 4.1 Launch configuration
+
+Make sure `vue.config.js` has source-mapping enabled:
+
+```
+  configureWebpack: {
+      devtool: "source-map",
+      [...]
+```
+
+Add the following configuration to `launch.json`:
+
+```
+{
+  "type": "chrome",
+  "request": "launch",
+  "env": { "PORT": "9073" },
+  "name": "Node: Chrome",
+  "url": "http://localhost:9071",
+  "webRoot": "${workspaceFolder}/leaseslicensing/frontend/leaseslicensing/",
+  "skipFiles": [
+      "${workspaceFolder}/leaseslicensing/frontend/leaseslicensing/node_modules/**/",
+      "<node_internals>/**"
+  ],
+  "sourceMaps": true,
+  "smartStep": true,
+  "outFiles": [
+      "${workspaceFolder}/leaseslicensing/frontend/leaseslicensing/src/**/*.js",
+      "${workspaceFolder}/leaseslicensing/frontend/leaseslicensing/src/**/*.vue",
+      "${workspaceFolder}/leaseslicensing/templates/leaseslicensing/**/*.html"
+  ],
+  "preLaunchTask": "node: serve"
+}
+```
+
+Create a task in `tasks.json`:
+
+```
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "node: serve",
+      "path": "/leaseslicensing/frontend/leaseslicensing",
+      "options": {"env": {"PORT": "9073"}},
+      "type": "npm",
+      "script": "serve",
+      "isBackground": true,
+      "problemMatcher": [{
+        "base": "$tsc-watch",
+        "background": {
+            "activeOnStart": true,
+            "beginsPattern": "Starting development server",
+            "endsPattern": "Compiled successfully"
+        }
+    }],
+    }
+  ]
+}
+```
+
+## 5. Additional Setups
 
 To also run the node server on container start, add the following line
 to devcontainer.json:
@@ -255,7 +320,7 @@ to devcontainer.json:
 &'"
 ```
 
-## 5. TODO
+## 6. TODO
 
 - SSH-key server login
 - Also start other containers (ledger, postgres) in VSCode
