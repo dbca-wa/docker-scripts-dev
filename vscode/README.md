@@ -41,7 +41,7 @@ command palette (CTRL+SHIFT+P, F1) …
 <img src="./media/image5.png" style="width:1.75704in;height:0.56947in"
 alt="Graphical user interface, text, application, chat or text message Description automatically generated" />
 
-… and select Connect to Host…
+… and select `Connect to Host`…
 
 <img src="./media/image6.png" style="width:6.0767in;height:0.27085in" />
 
@@ -60,7 +60,7 @@ menu:
 <img src="./media/image8.png" style="width:2.95849in;height:2.91682in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
-Click Attach to Container and enter the password when prompted for:
+Click `Attach to Container` and enter the password when prompted for:
 
 <img src="./media/image9.png" style="width:6.26806in;height:1.27153in"
 alt="Graphical user interface, text, application, website Description automatically generated" />
@@ -77,8 +77,8 @@ style="width:6.26806in;height:2.26528in" />
 
 This step can be omitted, because we want VSCode to automatically start
 the container when opening the project, and it’s left here for
-documentation purposes. To set up automatically opening the project in
-docker jump to Connect to the VM and start the dev container.
+documentation purposes. To set up opening the project automatically in
+docker jump to `2.2 Environment`.
 
 In the Remote Explorer view chose Open Container Configuration File:
 
@@ -106,8 +106,8 @@ alt="Text Description automatically generated" />
 
 ### 2.2 Environment
 
-Create a /vscode-env/leaseslicensing.env environment file and replace
-the three instances of YOUR.NAME with your name. This is the same env
+Create a `~/vscode-env/leaseslicensing.env` environment file and replace
+the three instances of `YOUR.NAME` with your name. This is the same env
 file that is picked up in the respective docker load shell script, e.g.
 docker-scripts-dev/windows_vbox/leaseslicensing_docker_load.sh. Thus, it
 can also be copied to the before-mentioned location within the VM.
@@ -138,7 +138,7 @@ ENABLE_DJANGO_LOGIN=True
 ```
 ### 2.3 Dev-container
 
-Edit or create and edit .devcontainer/devcontainer.json, or copy the file from this `.devcontainer` folder.
+Edit or create and edit `.devcontainer/devcontainer.json`, or copy the file from this `.devcontainer` folder.
 
 ```
 {
@@ -156,16 +156,16 @@ Edit or create and edit .devcontainer/devcontainer.json, or copy the file from t
 }
 ```
 
-The .devcontainer directory should hierarchically be at the same level
-as .vscode
+The `.devcontainer` directory should hierarchically be at the same level
+as `.vscode`
 
 <img src="./media/image13.png" style="width:1.64592in;height:1.12506in"
 alt="A screenshot of a computer Description automatically generated with low confidence" />
 
 ### 2.4 Check configuration
 
-Reopening (or opening) a folder at the project root should now have
-VSCode automatically pick up the .devcontainer configuration file and
+Re-opening (or opening) a folder at the project root should now have
+VSCode automatically pick up the `.devcontainer` configuration file and
 prompt to reopen the folder again in a container:
 
 <img src="./media/image14.png" style="width:3.79186in;height:0.81949in"
@@ -174,14 +174,14 @@ alt="Graphical user interface, application Description automatically generated" 
 <img src="./media/image15.png" style="width:4.71552in;height:1.0695in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
-Maybe for this to work it is required to locally install the Docker
+Maybe, for this to work it is required to locally install the Docker
 Desktop app, and VSCode will prompt for the install.
 
 ## 3. Django Server
 
 ### 3.1 Launch configuration
 
-In the Run and Debug view chose create a launch.json file or directly edit the file in the `.vscode` directory or copy from the repository's `.vscode` directory.
+In the Run and Debug view chose `create a launch.json file` or directly edit the file in the `.vscode` directory or copy from this repository's `.vscode` directory.
 
 <img src="./media/image16.png" style="width:4.06271in;height:1.97232in"
 alt="Graphical user interface, text, application Description automatically generated" />
@@ -189,7 +189,7 @@ alt="Graphical user interface, text, application Description automatically gener
 <img src="./media/image17.png" style="width:2.264in;height:1.57647in"
 alt="Graphical user interface, application Description automatically generated" />
 
-The launch.json should look like the following:
+The `launch.json` should look like the following:
 
 ```
 {
@@ -212,7 +212,7 @@ The launch.json should look like the following:
 
 ### 3.2 Server launch
 
-In Run and Debug chose Python: Django (or whatever has been chosen as
+In Run and Debug chose `Python: Django` (or which name has been chosen as
 name):
 
 <img src="./media/image18.png" style="width:2.56958in;height:0.84727in"
