@@ -138,19 +138,21 @@ ENABLE_DJANGO_LOGIN=True
 ```
 ### 2.3 Dev-container
 
-Edit or create and edit .devcontainer/devcontainer.json
+Edit or create and edit .devcontainer/devcontainer.json, or copy the file from this `.devcontainer` folder.
 
 ```
 {
-    "name": "Leases Licensing",
-    "image": "dbcawa/docker_app_dev:leaseslicensing_dev_latest",
-    "remoteUser": "docker",
-    "workspaceFolder": "/data/data/projects/leases-licensing",
-    "mounts": ["type=bind,source=/data/,target=/data/",           
- "type=bind,source=/data/data/dockerhome/,target=/home/docker/"
-              ],
-    "appPort": [ "7008:8080", "9071:9071","9072:9072","9073:9073","9074:9074","9075:9075","9076:9076", "9077:9077", "9078:9078","9079:9079", "9080:9080"],  
-    "runArgs": ["--env-file","\${localEnv:HOME}/vscode-env/leaseslicensing.env"]
+    "name": "Leases Licensing",
+    "image": "dbcawa/docker_app_dev:leaseslicensing_dev_latest",
+    "remoteUser": "docker",
+    "workspaceFolder": "/data/data/projects/leases-licensing",
+    "mounts": ["type=bind,source=/data/,target=/data/",
+               "type=bind,source=/data/data/dockerhome/,target=/home/docker/"
+              ],
+    "appPort": [ "7008:8080", "9071:9071", "9072:9072", "9073:9073", "9074:9074", "9075:9075", "9076:9076", "9077:9077","9078:9078","9079:9079", "9080:9080"],
+    "runArgs": ["--env-file","${localEnv:HOME}/vscode-env/leaseslicensing.env"],
+    "extensions": ["ms-python.python"],
+    "initializeCommand": "${localEnv:HOME}/git/docker-scripts-dev/windows_vbox/postgres_docker_load.sh && ${localEnv:HOME}/git/docker-scripts-dev/windows_vbox/ledger_docker_load.sh"
 }
 ```
 
@@ -179,8 +181,7 @@ Desktop app, and VSCode will prompt for the install.
 
 ### 3.1 Launch configuration
 
-In the Run and Debug view chose create a launch.json file or directly
-edit the file.
+In the Run and Debug view chose create a launch.json file or directly edit the file in the `.vscode` directory or copy from the repository's `.vscode` directory.
 
 <img src="./media/image16.png" style="width:4.06271in;height:1.97232in"
 alt="Graphical user interface, text, application Description automatically generated" />
@@ -258,7 +259,7 @@ Make sure `vue.config.js` has source-mapping enabled:
       [...]
 ```
 
-Add the following configuration to `launch.json`:
+Add the following configuration to `launch.json`, or copy the file from this repository's `.vscode` directory:
 
 ```
 {
@@ -309,18 +310,3 @@ Create a task in `tasks.json`:
 }
 ```
 
-## 5. Additional Setups
-
-To also run the node server on container start, add the following line
-to devcontainer.json:
-
-```json
-"postStartCommand": "nohup bash -c 'PORT=9073 npm run serve --prefix
-/data/data/projects/leases-licensing/leaseslicensing/frontend/leaseslicensing
-&'"
-```
-
-## 6. TODO
-
-- SSH-key server login
-- Also start other containers (ledger, postgres) in VSCode
