@@ -73,38 +73,8 @@ style="width:6.26806in;height:2.26528in" />
 
 ## 2. Configuration
 
-### 2.1 Manually point VSCode to the correct container user and project root
 
-This step can be omitted, because we want VSCode to automatically start
-the container when opening the project, and it’s left here for
-documentation purposes. To set up opening the project automatically in
-docker jump to `2.2 Environment`.
-
-In the Remote Explorer view chose Open Container Configuration File:
-
-<img src="./media/image11.png" style="width:4.75024in;height:1.02783in"
-alt="Graphical user interface, text, application Description automatically generated" />
-
-In the json configuration file edit the workspaceFolder and remoteUser
-keys and save the file:
-
-```
-{
-    "workspaceFolder": "/data/data/projects/leases-licensing",
-    "remoteUser": "docker"
-}
-```
-
-After saving refresh the containers or close the window and attach to
-the container again. Now the Explorer view should show the content of
-the workspace folder and running a terminal should show that the docker
-user is connected to the dev container. If there appears another user,
-like root, something went wrong.
-
-<img src="./media/image12.png" style="width:5.05582in;height:0.73615in"
-alt="Text Description automatically generated" />
-
-### 2.2 Environment
+### 2.1 Environment
 
 Create a `~/vscode-env/leaseslicensing.env` environment file and replace
 the three instances of `YOUR.NAME` with your name. This is the same env
@@ -136,7 +106,7 @@ ALLOWED_HOSTS=['*']
 DEV_APP_BUILD_URL="http://10.17.0.10:9073/static/leaseslicensing_vue/js/app.js"
 ENABLE_DJANGO_LOGIN=True
 ```
-### 2.3 Dev-container
+### 2.2 Dev-container
 
 Edit or create and edit `.devcontainer/devcontainer.json`, or copy the file from this `.devcontainer` folder.
 
@@ -162,7 +132,7 @@ as `.vscode`
 <img src="./media/image13.png" style="width:1.64592in;height:1.12506in"
 alt="A screenshot of a computer Description automatically generated with low confidence" />
 
-### 2.4 Check configuration
+### 2.3 Check configuration
 
 Re-opening (or opening) a folder at the project root should now have
 VSCode automatically pick up the `.devcontainer` configuration file and
