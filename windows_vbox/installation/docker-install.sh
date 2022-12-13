@@ -11,3 +11,12 @@ sudo systemctl status docker
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo systemctl restart docker
+
+# For Linux
+sudo groupadd -g 20000 container
+sudo useradd -g 20000 -u 200000 container -s /bin/bash
+
+sudo mkdir /home/container
+sudo chown container.container /home/container
+sudo usermod -aG docker container
+sudo usermod -aG sudo  container
