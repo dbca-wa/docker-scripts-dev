@@ -1,2 +1,2 @@
 #!/bin/bash
-docker exec -it leaseslicensing-dev su docker
+docker exec -it leaseslicensing-dev su container
