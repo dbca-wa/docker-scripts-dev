@@ -28,7 +28,7 @@ if [ -f "$HOME/gittmp/docker_repo_name" ]; then
      echo $DOCKER_REPO;
      cd $HOME/gittmp/
      docker image build  --tag  dbcawa/$DOCKER_REPO:$GIT_BRANCH$DOCKER_LATEST . ;
-     docker tag dbcawa/$DOCKER_REPO:latest dbcawa/$DOCKER_REPO:$DATE_VAR;
+     docker tag dbcawa/$DOCKER_REPO:$GIT_BRANCH$DOCKER_LATEST dbcawa/$DOCKER_REPO:$DATE_VAR;
      docker image push dbcawa/$DOCKER_REPO:$GIT_BRANCH$DOCKER_LATEST;
      docker image push dbcawa/$DOCKER_REPO:$DATE_VAR;
 
