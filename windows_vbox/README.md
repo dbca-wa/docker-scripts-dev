@@ -9,7 +9,7 @@ Wildlife Compliance: 7006 http://10.17.0.10:7006
 Disturbance: 7007 http://10.17.0.10:7007  
 Leases Licensing: 7008 http://10.17.0.10:7008   
 Park Passes: 7009 http://10.17.0.10:7009   
-Parkstay V2: 7010 http://10.17.0.10:7010 
+Parkstay V2: 7010 http://10.17.0.10:7010   
 Encryption GW: 7011 http://10.17.0.10:7011
 
 **Container Dev Ports**   
