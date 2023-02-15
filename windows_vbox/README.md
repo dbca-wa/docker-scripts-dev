@@ -21,8 +21,8 @@ Wildlife Compliance : 9051-9060 http://10.17.0.10:9051
 Disturbance: 9061-9070 http://10.17.0.10:9061  
 Leases Licensing: 9071-9080 http://10.17.0.10:9071  
 Park Passes: 9081-9090 http://10.17.0.10:9081  
-Parkstay V2: 9091-9100 http://10.17.0.10:9091  
-Encryption GW: 9101-9105 http://10.17.0.10:9101 
+Parkstay V2: 9091-9100 http://10.17.0.10:9091   
+Encryption GW: 9101-9105 http://10.17.0.10:9101    
 
 **Container SSH Ports**   
 Postgres: 2223    
