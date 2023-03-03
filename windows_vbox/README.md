@@ -10,7 +10,8 @@ Disturbance: 7007 http://10.17.0.10:7007
 Leases Licensing: 7008 http://10.17.0.10:7008   
 Park Passes: 7009 http://10.17.0.10:7009   
 Parkstay V2: 7010 http://10.17.0.10:7010   
-Encryption GW: 7011 http://10.17.0.10:7011
+Encryption GW: 7011 http://10.17.0.10:7011   
+Commercial Operator: 7012 http://10.17.0.10:7012   
 
 **Container Dev Ports**   
 Postgres: 9011-9020 http://10.17.0.10:9011   
@@ -23,6 +24,7 @@ Leases Licensing: 9071-9080 http://10.17.0.10:9071
 Park Passes: 9081-9090 http://10.17.0.10:9081  
 Parkstay V2: 9091-9100 http://10.17.0.10:9091   
 Encryption GW: 9101-9105 http://10.17.0.10:9101    
+Commercial Operator: 9106-9110 http://10.17.0.10:9106    
 
 **Container SSH Ports**   
 Postgres: 2223    
@@ -34,7 +36,8 @@ Disturbance: 2227
 Leases Licensing: 2228   
 Park Passes: 2229   
 Parkstay V2: 2230   
-Encryption GW: 2231
+Encryption GW: 2231   
+Commercial Operator: 2232   
 
 # Installation Instructions
 https://github.com/dbca-wa/docker-scripts-dev/tree/main/windows_vbox/installation
