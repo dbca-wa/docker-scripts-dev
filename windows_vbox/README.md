@@ -14,7 +14,7 @@ Encryption GW: 7011 http://10.17.0.10:7011
 Commercial Operator: 7012 http://10.17.0.10:7012  
 Moorings: 7013 http://10.17.0.10:7013  
 Geoserver: 7014 http://10.17.0.10:7014  
-Mooring Licensing: 7015 http://10.17.0.10:7014  
+Mooring Licensing: 7015 http://10.17.0.10:7015  
 
 **Container Dev Ports**   
 Postgres: 9011-9020 http://10.17.0.10:9011   
