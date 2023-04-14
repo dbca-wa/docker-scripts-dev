@@ -31,7 +31,7 @@ Encryption GW: 9101-9105 http://10.17.0.10:9101
 Commercial Operator: 9106-9110 http://10.17.0.10:9106   
 Moorings: 9111-9115 http://10.17.0.10:9111   
 Geoserver: 9116-9120 http://10.17.0.10:9116   
-Mooring Licensing: 9121-9125 http://10.17.0.10:9121 
+Mooring Licensing: 9121-9125 http://10.17.0.10:9121   
 API Gateway: 9126-9130 http://10.17.0.10:9126    
 
 **Container SSH Ports**   
