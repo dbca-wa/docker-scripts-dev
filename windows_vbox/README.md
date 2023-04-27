@@ -52,7 +52,7 @@ Commercial Operator: 2232
 Moorings : 2233      
 Geoserver : 2234  
 Mooring Licensing: 2235   
-API Gateway : 2236
+API Gateway : 2236   
 APP Monitor : 2237
 
 # Installation Instructions
