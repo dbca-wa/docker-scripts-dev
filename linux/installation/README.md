@@ -20,3 +20,11 @@ use the following command to generate an ssh key
 ```
 ssh-keygen -t rsa -b 4096
 ```
+
+Press enter on all three questions that are asked (no input required)
+
+```
+Enter file in which to save the key (/home/user/.ssh/id_rsa):    
+Enter passphrase (empty for no passphrase):    
+Enter same passphrase again:    
+```
