@@ -21,3 +21,11 @@ sudo mkdir /home/container
 sudo chown container.container /home/container
 sudo usermod -aG docker container
 sudo usermod -aG sudo  container
+
+sudo mkdir /linuxdata/
+sudo mkdir /data/
+sudo mkdir /data/data
+sudo mkdir /container-data/
+sudo chown -R container.container /data
+sudo chown -R container.container /linuxdata
+sudo chown -R container.container /container-data
