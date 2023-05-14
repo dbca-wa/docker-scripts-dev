@@ -30,7 +30,7 @@ Enter same passphrase again:
 ```
 c) Now we need to setup a authorized_keys file.  This will need to be created in /home/container/.ssh
 
-d) open /home/<user>/.ssh/id_rsa.pub (we will want to copy and paste this shortly)
+d) open /home/<- user ->/.ssh/id_rsa.pub (we will want to copy and paste this shortly)
   
 e) in terminal prompt
 
