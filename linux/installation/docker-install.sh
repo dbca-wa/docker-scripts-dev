@@ -25,6 +25,7 @@ sudo usermod -aG sudo  container
 sudo mkdir /linuxdata/
 sudo mkdir /data/
 sudo mkdir /data/data
+sudo mkdir /data/data/containerhome
 sudo mkdir /container-data/
 sudo chown -R container.container /data
 sudo chown -R container.container /linuxdata
