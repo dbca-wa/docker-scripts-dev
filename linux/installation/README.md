@@ -38,11 +38,19 @@ e) in terminal prompt
 sudo su container
 cd ~
 mkdir /home/container/.ssh 
-chmod 0600 /home/container/.ssh
+chmod 0700 /home/container/.ssh
 vi ~/.ssh/authorized_keys <-- copy the public key from /home/<user>/.ssh/id_rsa.pub into here and save the file
-chmod 0600 ~/.ssh/authorized_keys
+chmod 0700 ~/.ssh/authorized_keys
 ```
 
-f) completed
+f) Test SSH is setup correctly.
+exit back to desktop user account prompt and then run this command to check
+```
+ssh container@localhost
+```
+You should be ask a question about continuing to connect,  type yes and press enter.
+You prompt should automatically change to user container and no password should be asked.
+
+
   
   
