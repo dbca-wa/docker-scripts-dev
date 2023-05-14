@@ -42,6 +42,7 @@ chmod 0600 /home/container/.ssh
 vi ~/.ssh/authorized_keys <-- copy the public key from /home/<user>/.ssh/id_rsa.pub into here and save the file
 chmod 0600 ~/.ssh/authorized_keys
 ```
- 
+
+f) completed
   
   
