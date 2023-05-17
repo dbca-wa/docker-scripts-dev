@@ -56,24 +56,25 @@ You prompt should automatically change to user container and no password should 
 vi /etc/netplan/01-network-manager-all.yaml   
 
 ```
+# Let NetworkManager manage all devices on this system
 network:
-  version: 2
-  renderer: NetworkManager
-  ethernets:
-    eth0:
-      dhcp4: true
-  bridges:
-    br0:
-      interfaces: [eth0]
-      addresses: [10.17.0.10/32]
-      mtu: 1500
-      nameservers:
-        addresses: [8.8.8.8]
-      parameters:
-        stp: true
-        forward-delay: 4
-      dhcp4: no
-      dhcp6: no
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    lo:
+      dhcp4: no
+  bridges:
+    br0:
+      interfaces: [lo]
+      addresses: [10.17.0.10/32]
+      mtu: 1500
+      nameservers:
+        addresses: [8.8.8.8]
+      parameters:
+        stp: true
+        forward-delay: 4
+      dhcp4: no
+      dhcp6: no
  
 ```
   
