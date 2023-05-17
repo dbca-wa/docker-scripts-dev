@@ -51,8 +51,9 @@ ssh container@localhost
 You should be ask a question about continuing to connect,  type yes and press enter.
 You prompt should automatically change to user container and no password should be asked.
 
-**Network Configuration**
-vi /etc/netplan/01-network-manager-all.yaml
+**Network Configuration**   
+   
+vi /etc/netplan/01-network-manager-all.yaml   
 
 ```
 network:
