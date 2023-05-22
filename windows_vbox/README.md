@@ -16,6 +16,7 @@ Moorings: 7013 http://10.17.0.10:7013
 Geoserver: 7014 http://10.17.0.10:7014  
 Mooring Licensing: 7015 http://10.17.0.10:7015  
 API Gateway: 7016 http://10.17.0.10:7016    
+SQS: 7017 http://10.17.0.10:7017    
 
 **Container Dev Ports**   
 Postgres: 9011-9020 http://10.17.0.10:9011   
@@ -33,6 +34,7 @@ Moorings: 9111-9115 http://10.17.0.10:9111
 Geoserver: 9116-9120 http://10.17.0.10:9116   
 Mooring Licensing: 9121-9125 http://10.17.0.10:9121   
 API Gateway: 9126-9130 http://10.17.0.10:9126    
+SQS: 9131-9135 http://10.17.0.10:9131    
 
 **Container SSH Ports**   
 Postgres: 2223    
@@ -49,7 +51,8 @@ Commercial Operator: 2232
 Moorings : 2233      
 Geoserver : 2234  
 Mooring Licensing: 2235   
-API Gateway : 2236
+API Gateway : 2236   
+SQS : 2237   
 
 # Installation Instructions
 https://github.com/dbca-wa/docker-scripts-dev/tree/main/windows_vbox/installation
