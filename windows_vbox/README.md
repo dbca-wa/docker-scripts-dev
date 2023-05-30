@@ -17,6 +17,7 @@ Geoserver: 7014 http://10.17.0.10:7014
 Mooring Licensing: 7015 http://10.17.0.10:7015  
 API Gateway: 7016 http://10.17.0.10:7016    
 SQS: 7017 http://10.17.0.10:7017    
+GIS Kaartdijin Boodja: 7018 http://10.17.0.10:7018    
 
 **Container Dev Ports**   
 Postgres: 9011-9020 http://10.17.0.10:9011   
@@ -35,6 +36,7 @@ Geoserver: 9116-9120 http://10.17.0.10:9116
 Mooring Licensing: 9121-9125 http://10.17.0.10:9121   
 API Gateway: 9126-9130 http://10.17.0.10:9126    
 SQS: 9131-9135 http://10.17.0.10:9131    
+GIS Kaartdijin Boodja: 9136-9140 http://10.17.0.10:9136      
 
 **Container SSH Ports**   
 Postgres: 2223    
@@ -53,6 +55,7 @@ Geoserver : 2234
 Mooring Licensing: 2235   
 API Gateway : 2236   
 SQS : 2237   
+GIS Kaartdijin Boodja:  2238     
 
 # Installation Instructions
 https://github.com/dbca-wa/docker-scripts-dev/tree/main/windows_vbox/installation
