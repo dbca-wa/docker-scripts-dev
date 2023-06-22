@@ -20,3 +20,18 @@ Host 10.17.0.1
   User docker
   PreferredAuthentications publickey
   IdentityFile ~/.ssh/id_ed25519
+```
+
+
+# Virtual Box (Linux issue)
+
+# Question 1. Error Error: ENOSPC: System limit for number of file watchers reached, watch
+# Answer   1.  Increase max user watches
+```
+1. Login to virtual machine using putty   
+2. sudo su (Need root access)   
+3. Run this command in the root shell    
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p    
+4. Check that the number matches 524288   
+cat /proc/sys/fs/inotify/max_user_watches  
+```
