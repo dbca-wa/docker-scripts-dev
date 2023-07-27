@@ -20,6 +20,7 @@ API Gateway: 7016 http://10.17.0.10:7016
 SQS: 7017 http://10.17.0.10:7017    
 GIS Kaartdijin Boodja: 7018 http://10.17.0.10:7018    
 APP Monitor: 7019 http://10.17.0.10:7019
+SSS Django: 7020 http://10.17.0.10:7020
 
 **Container Dev Ports**   
 Postgres: 9011-9020 http://10.17.0.10:9011   
@@ -39,7 +40,8 @@ Mooring Licensing: 9121-9125 http://10.17.0.10:9121
 API Gateway: 9126-9130 http://10.17.0.10:9126    
 SQS: 9131-9135 http://10.17.0.10:9131    
 GIS Kaartdijin Boodja: 9136-9140 http://10.17.0.10:9136     
-APP Monitor: 9141-9145 http://10.17.0.10:9141
+APP Monitor: 9141-9145 http://10.17.0.10:9141   
+SSS Django: 9146-9150 http://10.17.0.10:9146   
 
 **Container SSH Ports**   
 Postgres: 2223    
@@ -61,6 +63,7 @@ API Gateway : 2236
 SQS : 2237   
 GIS Kaartdijin Boodja:  2238     
 APP Monitor : 2239
+SSS Django : 2240
 
 # Installation Instructions
 https://github.com/dbca-wa/docker-scripts-dev/tree/main/windows_vbox/installation
