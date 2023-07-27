@@ -19,8 +19,8 @@ API Gateway: 7016 http://10.17.0.10:7016
 API Gateway: 7016 http://10.17.0.10:7016    
 SQS: 7017 http://10.17.0.10:7017    
 GIS Kaartdijin Boodja: 7018 http://10.17.0.10:7018    
-APP Monitor: 7019 http://10.17.0.10:7019
-SSS Django: 7020 http://10.17.0.10:7020
+APP Monitor: 7019 http://10.17.0.10:7019    
+SSS Django: 7020 http://10.17.0.10:7020    
 
 **Container Dev Ports**   
 Postgres: 9011-9020 http://10.17.0.10:9011   
@@ -59,7 +59,6 @@ Moorings : 2233
 Geoserver : 2234  
 Mooring Licensing: 2235   
 API Gateway : 2236   
-<<<<<<< HEAD
 SQS : 2237   
 GIS Kaartdijin Boodja:  2238     
 APP Monitor : 2239
