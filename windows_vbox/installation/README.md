@@ -171,14 +171,15 @@ g) Select Done
 
 ![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/3e2baa5f-db80-4568-82a6-f91a5821531d)
 
-**Step 20: VM Proxy**
+**Step 20: VM Proxy**   
 
-a) Proxy Address should be empty   
-b) Select Done and Press Enter  
+a) Proxy Address should be empty     
+b) Select Done and Press Enter    
 
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%208.png?raw=true)
+![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%208.png?raw=true)    
 
-**Step 21: VM Ubuntu Mirror Location **    
+
+**Step 21: VM Ubuntu Mirror Location**    
 
 a) Mirror address should be an au archive.     
 b) Select Done and Press Enter    
@@ -186,7 +187,7 @@ b) Select Done and Press Enter
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%209.png?raw=true)    
 
 
-**Step 22: Installer Update available **   
+**Step 22: Installer Update available**   
 
 This screen may not appear if your using the latest ubuntu iso image.   
 
