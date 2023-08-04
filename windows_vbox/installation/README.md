@@ -68,20 +68,11 @@ c) Click Next
 **Step 7: Summary**
 
 a) Click Finish
+b) if the virtual machine begins to start click the cross on the window and choose power off (3rd option)
 
 ![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/3122f6d6-8a03-4f93-8a17-72999bcf3f30)
 
-
-
-**Step 8: Select Storage Size**
-
-a) Choose approximately 60GB
-b) Click Create   
-
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_new_docker_storage_size_vm.png?raw=true)
-
-
-**Step 9: VM Settings**
+**Step 8: VM Settings**
 
 a) Select the New VM Created from the left panel   
 b) Click Settings from the top bar.   
