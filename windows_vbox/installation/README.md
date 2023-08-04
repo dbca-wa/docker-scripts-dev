@@ -232,14 +232,15 @@ a) Select Continue and Press Enter
 
 **Step 28: VM Profile Setup**
 
-a) Under Name Enter "Docker"   
+a) Under Name Enter "Docker Admin"   
 b) Under Your server name Enter "Docker"   
-c) Under Username Enter "docker"   
-d) Under Choose a password Enter "docker"   (you can choose your own password if you wish)   
-e) Under Confirm your password Enter "docker"    (you can choose your own password if you wish)   
+c) Under Username Enter "dockeradmin"   
+d) Under Choose a password Enter "dockeradmin"   (you can choose your own password if you wish)   
+e) Under Confirm your password Enter "dockeradmin"    (you can choose your own password if you wish)   
 f) Select Done and Press Enter   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2015.png?raw=true)
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/c7c16f3a-01b9-47f6-9957-e43347c2e10e)
 
 **Step 29: SSH Setup**
 
