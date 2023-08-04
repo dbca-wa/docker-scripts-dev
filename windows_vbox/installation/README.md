@@ -47,8 +47,6 @@ b) Click next
 
 ![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/350cb463-f3a2-4422-b947-fbdf97e33465)
 
-
-
 **Step 5: Create New VM Memory**
 
 a) Enter memory above 2048 of Memory (you can choose more if you wish)  
@@ -181,49 +179,56 @@ b) Select Done and Press Enter
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%208.png?raw=true)
 
-**Step 21: VM Ubuntu Mirror Location**
+**Step 21: VM Ubuntu Mirror Location **
 
 a) Mirror address should be an au archive.   
 b) Select Done and Press Enter  
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%209.png?raw=true)
 
-**Step 22: VM Configure Storage**
+**Step 22: Installer Update available  **
+This screen may not appear if your using the latest ubuntu iso image.
+
+a) Select update to the new installer 
+
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/3979396c-53ad-4e6a-a037-0cd89e6d11a9)
+
+**Step 23: VM Configure Storage**
 
 a) X should match selection in screenshot    
 b) Select Done and Press Enter  
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2010.png?raw=true)
 
-**Step 23: VM Configure Storage Space**
+**Step 24: VM Configure Storage Space**
 
 a) In the screenshot where is says LVM volume group (make note of that numberm we will need it in the next step)   
 b) Using the arrow keys select the number next to mounted at /   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2011.png?raw=true)
 
-**Step 24: VM Configure Storage Space Amount**
+**Step 25: VM Configure Storage Space Amount**
 
 a) In the size box enter the amount you wrote down in Step 25.   
 b) Select Save and Press Enter   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2012.png?raw=true)
 
-**Step 25: VM Configure Storage Complete**
+**Step 26: VM Configure Storage Complete**
 
 a) Select Save and Press Enter   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2013.png?raw=true)
 
 
-**Step 26: VM Configure Storage Confirm**
+**Step 27: VM Configure Storage Confirm**
 
 a) Select Continue and Press Enter      
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2014.png?raw=true)
 
 
-**Step 27: VM Profile Setup**
+**Step 28: VM Profile Setup**
 
 a) Under Name Enter "Docker"   
 b) Under Your server name Enter "Docker"   
@@ -234,26 +239,26 @@ f) Select Done and Press Enter
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2015.png?raw=true)
 
-**Step 28: SSH Setup**
+**Step 29: SSH Setup**
 
 a) Add an X next to Install OpenSSH Server   
 b) Select Done and Press Enter   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2016.png?raw=true)
 
-**Step 29: Feature Server Snaps**
+**Step 30: Feature Server Snaps**
 
 a) Nothing to select in here, so select Done and Press Enter   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2017.png?raw=true)
 
-**Step 30: Installing System**
+**Step 31: Installing System**
 
 a) Wait for installation to complete go to step 33
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2018.png?raw=true)
 
-**Step 33: Installing System**
+**Step 32: Installing System**
 
 a) Once Installation is complete "Reboot Now" will appear under "View Full Log"
 b) Select Reboot Now and Press Enter
