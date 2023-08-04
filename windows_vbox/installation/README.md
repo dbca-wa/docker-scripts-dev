@@ -323,7 +323,17 @@ b) You should see a similar response to the screenshot.
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2029.png?raw=true)
 
-**Step 40: GIT Check out docker system run scripts**  
+**Step 40: Set container passsword (this is the username to develop under)**
+
+a) Type the following command to set a password for username container
+```
+sudo passwd container
+```
+b) enter a new password when the prompt appears (will not see any asterisks when typing a password)
+
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/889eabc0-8ab1-4ff6-a31c-90599ee68097)
+
+**Step 41: GIT Check out docker system run scripts**  
 
 a) Run the follow command to pull a copy the dbca docker scripts:  (this should be run while in your home directory)   
 ```
@@ -332,14 +342,14 @@ git clone https://github.com/dbca-wa/docker-scripts-dev.git
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2030.png?raw=true)
 
-**Step 41: GIT Check out docker system run scripts**   
+**Step 42: GIT Check out docker system run scripts**   
 
 a) Change Directory "cd docker-scripts-dev/windows_vbox"   
 b) run command "mkdir env"   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2031.png?raw=true)
 
-**Step 42: Start Postgres Server**  
+**Step 43: Start Postgres Server**  
 
 a) Run "./postgres_docker_load.sh" (you might need to 'chmod 755 postgres_docker_load.sh' this file)   
 b) Run "docker ps" to check the postgres container is running (see screenshot)   
@@ -348,7 +358,7 @@ c) Run "../tools/connect_postgres.sh" (this will allow you to connect into the c
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2032.png?raw=true)
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2033.png?raw=true)
 
-**Step 43: Start Postgres Server**   
+**Step 44: Start Postgres Server**   
 
 a) Run "./create-new-postgres.sh" (This will create your postgres database inside the container,  never run this if you have a database setup as it will wipe your databases)  
 b) Run "exit" So you can leave the container and go back to docker@dockerdev:~ prompt
