@@ -314,7 +314,7 @@ curl https://raw.githubusercontent.com/dbca-wa/docker-scripts-dev/main/windows_v
 ```
 b) you will be ask for the password created at step 29. Please enter the password and press enter (asterisk or characters will not appear while entering the password)
 
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2028.png?raw=true)
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/b1ccc510-d4e6-4f79-ad4c-0004adb5e4e0)
 
 **Step 39: Check Docker Installation is Complete**
 
