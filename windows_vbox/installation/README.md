@@ -96,12 +96,11 @@ c) Check Solid State Drive
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_storage_controller_sata.png?raw=true)
 
-
-**Step 13: VM Select Installation Media**
+**Step 11: VM Select Installation Media**
 
 a) Select Storage   
-b) Select Empty under Controller: IDE
-c) Select Disk icon on the right and choose the download ubuntu 22.04-live-server image.
+b) Select Empty under Controller: IDE    
+c) Select Disk icon on the right and choose the download ubuntu 22.04-live-server image.    (choose your ubuntu install iso image if not already selected)
 d) click ok
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_storage_controller_install_image.png?raw=true)
