@@ -241,6 +241,13 @@ f) Select Done and Press Enter
 
 ![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/353df077-9842-4464-89d6-4f5f1b6cfa58)
 
+**Step 30: Upgrade to Ubuntu Pro**
+
+a) Add an X next to Skip for now   
+b) Select continue  
+
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/0afccfee-281f-4378-a1b5-df18afe2302d)
+
 
 **Step 29: SSH Setup**
 
