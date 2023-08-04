@@ -88,7 +88,7 @@ c) Change Paravirtualization Interface to "KVM"
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_system_acceleration.png?raw=true)
 
 
-**Step 12: VM Storage Settings**
+**Step 10: VM Storage Settings**
 
 a) Select Storage   
 b) Select Ubuntu 22.04 (docker).vdi
