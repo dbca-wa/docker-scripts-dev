@@ -59,8 +59,8 @@ c) Click Next
 
 **Step 6: Create New VM Hard disk file type**
 
-a) Select Create a Virtual Hard Disk Now
-b) Choose an sufficient amount.
+a) Select Create a Virtual Hard Disk Now   
+b) Choose an sufficient amount.   
 c) Click Next   
 
 ![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/40f88652-78ba-429a-a32b-085c4efd8b8e)
