@@ -287,7 +287,8 @@ a) Login with the username and password created in step 29
 a) Login with the username and password created in step 29   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2020.png?raw=true)
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2021.png?raw=true)
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/b774b639-4c4a-4b0f-9f16-b9b17c4243d1)
+
 
 **Step 36: SSH to VM (Putty)**
 
@@ -297,11 +298,12 @@ c) Double Click 10.17.0.10 at reference Point 4 in screensheet.
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2026.png?raw=true)
 
+
 **Step 37: SSH to VM (Login)**
 
 a) At prompt enter login details that were created at step 29 and login.    When entering the password you will not see asterisks or characters appear.   
 
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2027.png?raw=true)
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/c38f0434-b9a7-4672-ad74-e2feae818bd3)
 
 
 **Step 38: Install Docker**
