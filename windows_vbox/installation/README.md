@@ -101,12 +101,19 @@ c) Check Solid State Drive
 a) Select Storage   
 b) Select Empty under Controller: IDE    
 c) Select Disk icon on the right and choose the download ubuntu 22.04-live-server image.    (choose your ubuntu install iso image if not already selected)    
-d) click ok    
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_storage_controller_install_image.png?raw=true)
 
 **Step 12: Add additional network adapter**
 
+a) Select Network on the left side menu    
+b) click adapter 2 tab   
+c) Tick Enable Network Adapter
+d) Click attached to dropdown and select Host-only Adapter
+e) In Name dropdown select VirtualBox Host-Only Ethernet Adapter #2
+f) click ok    
+
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/9d3d6a71-c7a2-42bb-821b-f444812eb04d)
 
 **Step 13: VM Start**
 
