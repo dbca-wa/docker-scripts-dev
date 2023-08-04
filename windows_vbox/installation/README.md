@@ -105,105 +105,108 @@ d) click ok
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_storage_controller_install_image.png?raw=true)
 
-**Step 12: VM Start**
+**Step 12: Add additional network adapter**
+
+
+**Step 13: VM Start**
 
 a) Select "Ubuntu 22.04 (docker)"   
 b) Click Start   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%201.png?raw=true)
 
-**Step 13: VM Running**
+**Step 14: VM Running**
 
 a) Select (with aarow keys) "Try or Install Ubunutu Server    
 b) Press Enter   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%202.png?raw=true)
 
-**Step 14: VM Language**
+**Step 15: VM Language**
 
 a) Select (with aarow keys) "English"   
 b) Press Enter   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%203.png?raw=true)
 
-**Step 15: VM Update Installer**
+**Step 16: VM Update Installer**
 
 a) Select "Update to the new installer" - May not get this option if you image is already the latest.  If so skip to next step   
 b) Press Enter   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%204.png?raw=true)
 
-**Step 16: VM Key Board Layout**
+**Step 17: VM Key Board Layout**
 
 a) Both Layout and Variant should be English (US)   
 b) Select Done and Press Enter  
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%205.png?raw=true)
 
-**Step 17: VM Install Type**
+**Step 18: VM Install Type**
 
 a) X should be selected on Ubuntu Server   
 b) Select Done and Press Enter  
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%206.png?raw=true)
 
-**Step 18: VM Network**
+**Step 19: VM Network**
 
 a) Should see at least one interface configuration   
 b) Select Done and Press Enter  
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%207.png?raw=true)
 
-**Step 19: VM Proxy**
+**Step 20: VM Proxy**
 
 a) Proxy Address should be empty   
 b) Select Done and Press Enter  
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%208.png?raw=true)
 
-**Step 20: VM Ubuntu Mirror Location**
+**Step 21: VM Ubuntu Mirror Location**
 
 a) Mirror address should be an au archive.   
 b) Select Done and Press Enter  
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%209.png?raw=true)
 
-**Step 24: VM Configure Storage**
+**Step 22: VM Configure Storage**
 
 a) X should match selection in screenshot    
 b) Select Done and Press Enter  
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2010.png?raw=true)
 
-**Step 25: VM Configure Storage Space**
+**Step 23: VM Configure Storage Space**
 
 a) In the screenshot where is says LVM volume group (make note of that numberm we will need it in the next step)   
 b) Using the arrow keys select the number next to mounted at /   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2011.png?raw=true)
 
-**Step 26: VM Configure Storage Space Amount**
+**Step 24: VM Configure Storage Space Amount**
 
 a) In the size box enter the amount you wrote down in Step 25.   
 b) Select Save and Press Enter   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2012.png?raw=true)
 
-**Step 27: VM Configure Storage Complete**
+**Step 25: VM Configure Storage Complete**
 
 a) Select Save and Press Enter   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2013.png?raw=true)
 
 
-**Step 28: VM Configure Storage Confirm**
+**Step 26: VM Configure Storage Confirm**
 
 a) Select Continue and Press Enter      
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2014.png?raw=true)
 
 
-**Step 29: VM Profile Setup**
+**Step 27: VM Profile Setup**
 
 a) Under Name Enter "Docker"   
 b) Under Your server name Enter "Docker"   
@@ -214,20 +217,20 @@ f) Select Done and Press Enter
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2015.png?raw=true)
 
-**Step 30: SSH Setup**
+**Step 28: SSH Setup**
 
 a) Add an X next to Install OpenSSH Server   
 b) Select Done and Press Enter   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2016.png?raw=true)
 
-**Step 31: Feature Server Snaps**
+**Step 29: Feature Server Snaps**
 
 a) Nothing to select in here, so select Done and Press Enter   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2017.png?raw=true)
 
-**Step 32: Installing System**
+**Step 30: Installing System**
 
 a) Wait for installation to complete go to step 33
 
