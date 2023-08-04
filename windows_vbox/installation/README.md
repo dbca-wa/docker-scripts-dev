@@ -289,33 +289,7 @@ a) Login with the username and password created in step 29
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2020.png?raw=true)
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2021.png?raw=true)
 
-**Step 36: Edit Network Config**
-
-a) Login into the system as root "sudo su"   
-b) edit file "vi /etc/netplan/00-installer-config.yaml"   
-
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2022.png?raw=true)
-
-**Step 37: Update Network Config**
-
-a) At line 6 we need to insert 3 new lines with correct tabing (see screenshot)
-```
-    enp0s8:   
-       dhcp4: false    
-       addresses: [10.17.0.10/24]    
-```   
-b) Save and exit.   
-
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2023.png?raw=true)
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2024.png?raw=true)
-
-**Step 38: VM Reboot**
-
-a) Enter "Reboot" and press Enter
-
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2025.png?raw=true)
-
-**Step 39: SSH to VM (Putty)**
+**Step 36: SSH to VM (Putty)**
 
 a) Open Putty (Putty can be downloaded from within this repo)   
 b) Enter "10.17.0.10" into Host Name , Saved Session and click Save   
@@ -323,14 +297,14 @@ c) Double Click 10.17.0.10 at reference Point 4 in screensheet.
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2026.png?raw=true)
 
-**Step 40: SSH to VM (Login)**
+**Step 37: SSH to VM (Login)**
 
 a) At prompt enter login details that were created at step 29 and login.    When entering the password you will not see asterisks or characters appear.   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2027.png?raw=true)
 
 
-**Step 41: Install Docker**
+**Step 38: Install Docker**
 
 a) Enter the following command into the putty screen and press enter. You should be able to copy and paste the following command (putty accept right mouse click for paste)
 ```
@@ -340,14 +314,14 @@ b) you will be ask for the password created at step 29. Please enter the passwor
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2028.png?raw=true)
 
-**Step 42: Check Docker Installation is Complete**
+**Step 39: Check Docker Installation is Complete**
 
 a) enter at the prompt "docker ps" and press enter to conifrm docker is installed correctly.
 b) You should see a similar response to the screenshot.
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2029.png?raw=true)
 
-**Step 43: GIT Check out docker system run scripts**  
+**Step 40: GIT Check out docker system run scripts**  
 
 a) Run the follow command to pull a copy the dbca docker scripts:  (this should be run while in your home directory)   
 ```
@@ -356,14 +330,14 @@ git clone https://github.com/dbca-wa/docker-scripts-dev.git
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2030.png?raw=true)
 
-**Step 44: GIT Check out docker system run scripts**   
+**Step 41: GIT Check out docker system run scripts**   
 
 a) Change Directory "cd docker-scripts-dev/windows_vbox"   
 b) run command "mkdir env"   
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2031.png?raw=true)
 
-**Step 45: Start Postgres Server**  
+**Step 42: Start Postgres Server**  
 
 a) Run "./postgres_docker_load.sh" (you might need to 'chmod 755 postgres_docker_load.sh' this file)   
 b) Run "docker ps" to check the postgres container is running (see screenshot)   
@@ -372,37 +346,11 @@ c) Run "../tools/connect_postgres.sh" (this will allow you to connect into the c
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2032.png?raw=true)
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2033.png?raw=true)
 
-**Step 46: Start Postgres Server**   
+**Step 43: Start Postgres Server**   
 
 a) Run "./create-new-postgres.sh" (This will create your postgres database inside the container,  never run this if you have a database setup as it will wipe your databases)  
 b) Run "exit" So you can leave the container and go back to docker@dockerdev:~ prompt
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2034.png?raw=true)
-
-**Step 47: Start Webdav Server**   
-
-a) Run "./webdav_docker_load.sh" (this will allow you to share files from windows into the containers)   
-b) Run "docker ps" to check the webdav container is running (see screenshot)   
-
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2034.png?raw=true)
-
-**Step 48: Check Webdav Server**   
-
-a) Open your browser (chrome,firefox) and enter this url "http://10.17.0.10:6999/webdav"   
-b) You should receive a simliar page to the screenshot to confirm the webdav server is working.   
-
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2036.png?raw=true)
-
-**Step 49: Create share drive in windows**   
-
-a) In Windows File Manager right click "This PC" and click "Map network drive"   
-b) Select Drive (Maybe M:)   
-c) In Folder type in "http://10.17.0.10/webdav"   
-d) Click finish   
-e) You should now a map drive to windows that will let you share files between your container and windows.   
-
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2037.png?raw=true)
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2038.png?raw=true)
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2039.png?raw=true)
 
 **Completed**
