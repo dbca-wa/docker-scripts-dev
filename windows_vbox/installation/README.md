@@ -31,7 +31,7 @@ a) Click Machine --> NEW Button
 
 ![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/7426d818-8cd6-41a1-b5e7-25a10d024992)
 
-**Step 4: Create New VM Naming**
+**Step 4 a): Create New VM Naming**
 
 a) Enter under Name "Ubuntu 22.04 (docker)  
 b) Select ISO image (the ubuntu image you downloaded)
@@ -39,6 +39,14 @@ c) Drop down should match screenshot
 d) Click Next   
 
 ![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/4766add3-0aaa-4dfc-b2fd-061fcfe34f83)
+
+**Step 4 b): Set hostname**
+
+a) Adjust hostname 
+b) Click next
+
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/350cb463-f3a2-4422-b947-fbdf97e33465)
+
 
 
 **Step 5: Create New VM Memory**
