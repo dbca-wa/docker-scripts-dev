@@ -59,10 +59,11 @@ c) Click Next
 
 **Step 6: Create New VM Hard disk file type**
 
-a) Select VDI (VirtualBox Disk Image)
-b) Click Next   
+a) Select Create a Virtual Hard Disk Now
+b) Choose an sufficient amount.
+c) Click Next   
 
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_new_docker_storage_type_vm.png?raw=true)
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/40f88652-78ba-429a-a32b-085c4efd8b8e)
 
 **Step 7: Create New VM Hard disk physical type**
 
