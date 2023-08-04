@@ -159,13 +159,13 @@ b) Select Done and Press Enter
 
 **Step 19: VM Network**
 
-a) Should see two network adapters
-b) using arrow keys on keyboard go to second adapter (without ip address) eg enp0s8 and select the interface (using enter) and choose Edit IPV4
-c) change IPv4 Method from Automatic to manual
-d) Into Subnet field enter 10.17.0.0/24
-e) Into Address field enter 10.17.0.10
-f) Select Save
-g) 
+a) Should see two network adapters    
+b) using arrow keys on keyboard go to second adapter (without ip address) eg enp0s8 and select the interface (using enter) and choose Edit IPV4    
+c) change IPv4 Method from Automatic to manual    
+d) Into Subnet field enter 10.17.0.0/24    
+e) Into Address field enter 10.17.0.10    
+f) Select Save    
+g) Select Done    
 
 ![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/af29d78f-e7ac-4217-af26-d4e8424e6794)
 
