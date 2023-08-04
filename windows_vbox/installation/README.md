@@ -33,11 +33,12 @@ a) Click Machine --> NEW Button
 
 **Step 4: Create New VM Naming**
 
-a) Enter under Name "Ubuntu 22.04 (docker)   
-b) Drop down should match screenshot   
-c) Click Next   
+a) Enter under Name "Ubuntu 22.04 (docker)  
+b) Select ISO image (the ubuntu image you downloaded)
+c) Drop down should match screenshot   
+d) Click Next   
 
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_new_docker_os_vm.png?raw=true)
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/4766add3-0aaa-4dfc-b2fd-061fcfe34f83)
 
 
 **Step 5: Create New VM Memory**
