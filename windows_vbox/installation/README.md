@@ -51,10 +51,11 @@ b) Click next
 
 **Step 5: Create New VM Memory**
 
-a) Select 2048 of Memory (you can choose more if you wish)  
-b) Click Next   
+a) Enter memory above 2048 of Memory (you can choose more if you wish)  
+b) choose 1 of more cpus 
+c) Click Next   
 
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_new_docker_memory_vm.png?raw=true)
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/39e66fc8-45af-4521-b70b-ad600dea9497)
 
 **Step 6: Create New VM Hard disk file type**
 
