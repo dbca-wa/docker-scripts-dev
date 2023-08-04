@@ -27,9 +27,9 @@ c) Click Apply and Close.
 
 **Step 3: Create New VM**
 
-a) Click NEW Button
+a) Click Machine --> NEW Button
 
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_new_docker_vm.png?raw=true)
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/7426d818-8cd6-41a1-b5e7-25a10d024992)
 
 **Step 4: Create New VM Naming**
 
