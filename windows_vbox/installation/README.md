@@ -186,10 +186,10 @@ b) Select Done and Press Enter
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%209.png?raw=true)
 
-**Step 22: Installer Update available  **
-This screen may not appear if your using the latest ubuntu iso image.
+**Step 22: Installer Update available **   
+This screen may not appear if your using the latest ubuntu iso image.   
 
-a) Select update to the new installer 
+a) Select update to the new installer    
 
 ![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/3979396c-53ad-4e6a-a037-0cd89e6d11a9)
 
