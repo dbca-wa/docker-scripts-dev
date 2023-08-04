@@ -159,10 +159,20 @@ b) Select Done and Press Enter
 
 **Step 19: VM Network**
 
-a) Should see at least one interface configuration   
-b) Select Done and Press Enter  
+a) Should see two network adapters
+b) using arrow keys on keyboard go to second adapter (without ip address) eg enp0s8 and select the interface (using enter) and choose Edit IPV4
+c) change IPv4 Method from Automatic to manual
+d) Into Subnet field enter 10.17.0.0/24
+e) Into Address field enter 10.17.0.10
+f) Select Save
+g) 
 
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%207.png?raw=true)
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/af29d78f-e7ac-4217-af26-d4e8424e6794)
+
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/3f3069b8-0ee1-4b8d-b9f5-c54427f841bc)
+
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/3e2baa5f-db80-4568-82a6-f91a5821531d)
+
 
 **Step 20: VM Proxy**
 
