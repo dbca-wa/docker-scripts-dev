@@ -13,9 +13,8 @@ https://www.virtualbox.org/wiki/Downloads
 
 **Step 2: Setup Host Adapter**
 
-Click File --> Host Network Manager
+Click File --> Tools --> Network Manager
 
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_main_screen.png?raw=true)
 ![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/077ca34e-4a26-4b59-80ba-d47a33b7f9e8)
 
 
