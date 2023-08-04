@@ -65,12 +65,12 @@ c) Click Next
 
 ![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/40f88652-78ba-429a-a32b-085c4efd8b8e)
 
-**Step 7: Create New VM Hard disk physical type**
+**Step 7: Summary**
 
-a) Select Dynamically Allocated
-b) Click Next   
+a) Click Finish
 
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_new_docker_storage_type2_vm.png?raw=true)
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/3122f6d6-8a03-4f93-8a17-72999bcf3f30)
+
 
 
 **Step 8: Select Storage Size**
