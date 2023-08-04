@@ -239,8 +239,8 @@ d) Under Choose a password Enter "dockeradmin"   (you can choose your own passwo
 e) Under Confirm your password Enter "dockeradmin"    (you can choose your own password if you wish)   
 f) Select Done and Press Enter   
 
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_start_ubuntu_installation_step%2015.png?raw=true)
-![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/c7c16f3a-01b9-47f6-9957-e43347c2e10e)
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/353df077-9842-4464-89d6-4f5f1b6cfa58)
+
 
 **Step 29: SSH Setup**
 
