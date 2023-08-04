@@ -16,6 +16,8 @@ https://www.virtualbox.org/wiki/Downloads
 Click File --> Host Network Manager
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_main_screen.png?raw=true)
+![image](https://github.com/dbca-wa/docker-scripts-dev/assets/12062380/077ca34e-4a26-4b59-80ba-d47a33b7f9e8)
+
 
 a) Click Create and then Select the Adapter ending with #2.  
 b) In the bottom box change the adapter IPV4 address to 10.17.0.1.   
