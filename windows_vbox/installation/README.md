@@ -79,15 +79,7 @@ b) Click Settings from the top bar.
 
 ![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_vm_settings.png?raw=true)
 
-**Step 10: VM CPU Processor**
-
-a) Select System   
-b) Select Processor   
-c) Change Processor from 1 to 2 (You can change this more if required)   
-
-![alt text](https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/images/vbox_system_processor.png?raw=true)
-
-**Step 11: VM Acceleration**
+**Step 9: VM Acceleration**
 
 a) Select System   
 b) Select Acceleration   
