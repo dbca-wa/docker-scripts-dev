@@ -54,4 +54,4 @@ then
 fi
 
 docker stop geoserver-dev
-docker run --rm --pull=always --name='geoserver-dev' --hostname geoserver-dev  --env-file=$SCRIPTPATH$ENV_FILE  --mount type=bind,source=/linuxdata/geoserver-dev/data/,target=/data/ --mount type=bind,source=/linuxdata/geoserver-dev/data_dir/,target=/data_dir/  -p 10.17.0.10:9116-9120:9116-9120 -p 10.17.0.10:2224:22 -p 7014:8080  -d -i -t kartoza/geoserver:latest 
+docker run --rm --pull=always --name='geoserver-dev' --hostname geoserver-dev  --env-file=$SCRIPTPATH$ENV_FILE  --mount type=bind,source=/linuxdata/geoserver-dev/data/,target=/data/ --mount type=bind,source=/linuxdata/geoserver-dev/data_dir/,target=/data_dir/  -p 10.17.0.10:9116-9120:9116-9120 -p 10.17.0.10:2224:22 -p 7014:8080  -d -i -t dbcawa/appsteam-geoserver:2023.07.04.10.3752 
