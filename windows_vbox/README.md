@@ -21,7 +21,7 @@ SQS: 7017 http://10.17.0.10:7017
 GIS Kaartdijin Boodja: 7018 http://10.17.0.10:7018    
 APP Monitor: 7019 http://10.17.0.10:7019    
 SSS Django: 7020 http://10.17.0.10:7020    
-PBSV2 : 7021 http://10.17.0.10:7021  
+PBSV2 : 7021 http://10.17.0.10:7021     
 
 **Container Dev Ports**   
 Postgres: 9011-9020 http://10.17.0.10:9011   
@@ -43,7 +43,7 @@ SQS: 9131-9135 http://10.17.0.10:9131
 GIS Kaartdijin Boodja: 9136-9140 http://10.17.0.10:9136     
 APP Monitor: 9141-9145 http://10.17.0.10:9141   
 SSS Django: 9146-9150 http://10.17.0.10:9146   
-PBSV2: 9151-9156 http://10.17.0.10:9151   
+PBSV2: 9151-9156 http://10.17.0.10:9151       
 
 **Container SSH Ports**   
 Postgres: 2223    
@@ -65,7 +65,7 @@ SQS : 2237
 GIS Kaartdijin Boodja:  2238     
 APP Monitor : 2239
 SSS Django : 2240
-PBSV2 : 2241
+PBSV2 : 2241   
 
 # Installation Instructions
 https://github.com/dbca-wa/docker-scripts-dev/tree/main/windows_vbox/installation
