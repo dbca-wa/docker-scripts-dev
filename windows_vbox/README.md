@@ -63,8 +63,8 @@ Mooring Licensing: 2235
 API Gateway : 2236   
 SQS : 2237   
 GIS Kaartdijin Boodja:  2238     
-APP Monitor : 2239
-SSS Django : 2240
+APP Monitor : 2239    
+SSS Django : 2240    
 PBSV2 : 2241   
 
 # Installation Instructions
