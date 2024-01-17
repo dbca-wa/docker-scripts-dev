@@ -49,7 +49,7 @@ SSS Django: 9146-9150 http://10.17.0.10:9146
 PBSV2: 9151-9155 http://10.17.0.10:9151         
 IDAIS: 9156-9160 http://10.17.0.10:9156    
 System Maintenance 3: 9161-9165 http://10.17.0.10:9161            
-Queue Manager: 9166-9160 http://10.17.0.10:9166        
+Queue Manager: 9166-9170 http://10.17.0.10:9166        
 
 **Container SSH Ports**   
 Postgres: 2223    
