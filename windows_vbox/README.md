@@ -23,7 +23,8 @@ APP Monitor: 7019 http://10.17.0.10:7019
 SSS Django: 7020 http://10.17.0.10:7020    
 PBSV2 : 7021 http://10.17.0.10:7021     
 IDAIS : 7022 http://10.17.0.10:7022   
-System Maintenance 3: 7023 http://10.17.0.10:7023  
+System Maintenance 3: 7023 http://10.17.0.10:7023       
+Queue Manager : 7024 http://10.17.0.10:7024     
 
 **Container Dev Ports**   
 Postgres: 9011-9020 http://10.17.0.10:9011   
@@ -47,7 +48,8 @@ APP Monitor: 9141-9145 http://10.17.0.10:9141
 SSS Django: 9146-9150 http://10.17.0.10:9146    
 PBSV2: 9151-9155 http://10.17.0.10:9151         
 IDAIS: 9156-9160 http://10.17.0.10:9156    
-System Maintenance 3: 9161-9165 http://10.17.0.10:9161        
+System Maintenance 3: 9161-9165 http://10.17.0.10:9161            
+Queue Manager: 9166-9160 http://10.17.0.10:9166        
 
 **Container SSH Ports**   
 Postgres: 2223    
@@ -72,6 +74,7 @@ SSS Django : 2240
 PBSV2 : 2241   
 IDAIS : 2242     
 System Maintenance 3 : 2243    
+Queue Manager : 2243    
 
 # Installation Instructions
 https://github.com/dbca-wa/docker-scripts-dev/tree/main/windows_vbox/installation
