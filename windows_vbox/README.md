@@ -25,6 +25,7 @@ PBSV2 : 7021 http://10.17.0.10:7021
 IDAIS : 7022 http://10.17.0.10:7022   
 System Maintenance 3: 7023 http://10.17.0.10:7023       
 Queue Manager : 7024 http://10.17.0.10:7024     
+Fee Waiver : 7025 http://10.17.0.10:7025     
 
 **Container Dev Ports**   
 Postgres: 9011-9020 http://10.17.0.10:9011   
@@ -50,6 +51,7 @@ PBSV2: 9151-9155 http://10.17.0.10:9151
 IDAIS: 9156-9160 http://10.17.0.10:9156    
 System Maintenance 3: 9161-9165 http://10.17.0.10:9161            
 Queue Manager: 9166-9170 http://10.17.0.10:9166        
+Fee Waiver: 9171-9175 http://10.17.0.10:9171     
 
 **Container SSH Ports**   
 Postgres: 2223    
@@ -75,6 +77,7 @@ PBSV2 : 2241
 IDAIS : 2242     
 System Maintenance 3 : 2243    
 Queue Manager : 2243    
+Fee Waiver : 2244   
 
 # Installation Instructions
 https://github.com/dbca-wa/docker-scripts-dev/tree/main/windows_vbox/installation
