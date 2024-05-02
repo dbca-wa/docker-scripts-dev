@@ -83,6 +83,7 @@ System Maintenance 3 : 2243
 Queue Manager : 2243    
 Fee Waiver : 2244   
 PBSv1 : 2245   
+Geoserver2: 2246    
 
 # Installation Instructions
 https://github.com/dbca-wa/docker-scripts-dev/tree/main/windows_vbox/installation
