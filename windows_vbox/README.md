@@ -27,6 +27,7 @@ System Maintenance 3: 7023 http://10.17.0.10:7023
 Queue Manager : 7024 http://10.17.0.10:7024     
 Fee Waiver : 7025 http://10.17.0.10:7025     
 PBSV1 : 7025 http://10.17.0.10:7026     
+Geoserver2: 7026 http://10.17.0.10:7026  
 
 **Container Dev Ports**   
 Postgres: 9011-9020 http://10.17.0.10:9011   
@@ -54,6 +55,7 @@ System Maintenance 3: 9161-9165 http://10.17.0.10:9161
 Queue Manager: 9166-9170 http://10.17.0.10:9166        
 Fee Waiver: 9171-9175 http://10.17.0.10:9171     
 PBSv1: 9176-9180 http://10.17.0.10:9176     
+Geoserver2: 9181-9185 http://10.17.0.10:9181   
 
 **Container SSH Ports**   
 Postgres: 2223    
