@@ -25,7 +25,7 @@ else
    sudo mkdir "/linuxdata/geoserver2-dev/"
 fi
 
-if [ -d "/linuxdata/geoserver-dev/data" ]
+if [ -d "/linuxdata/geoserver2-dev/data" ]
 then
    echo "Directory Exists /linuxdata/geoserver2-dev/data"
 else
