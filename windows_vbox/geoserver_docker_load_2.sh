@@ -39,19 +39,19 @@ else
    sudo mkdir "/linuxdata/geoserver2-dev/data_dir"
 fi
 
-if [ -d "/linuxdata/geoserver-dev/geoserver_data" ]
+if [ -d "/linuxdata/geoserver2-dev/geoserver_data" ]
 then
-   echo "Directory Exists /linuxdata/geoserver-dev/geoserver_data"
+   echo "Directory Exists /linuxdata/geoserver2-dev/geoserver_data"
 else
-   sudo mkdir "/linuxdata/geoserver-dev/geoserver_data"
+   sudo mkdir "/linuxdata/geoserver2-dev/geoserver_data"
 fi
 
 
-if [ -d "/linuxdata/geoserver-dev/geocache" ]
+if [ -d "/linuxdata/geoserver2-dev/geocache" ]
 then
-   echo "Directory Exists /linuxdata/geoserver-dev/geocache"
+   echo "Directory Exists /linuxdata/geoserver2-dev/geocache"
 else
-   sudo mkdir "/linuxdata/geoserver-dev/geocache"
+   sudo mkdir "/linuxdata/geoserver2-dev/geocache"
 fi
 
 
