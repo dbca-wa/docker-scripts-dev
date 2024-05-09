@@ -32,11 +32,27 @@ else
    sudo mkdir "/linuxdata/geoserver-dev/data"
 fi
 
+
 if [ -d "/linuxdata/geoserver-dev/data_dir" ]
 then
    echo "Directory Exists /linuxdata/geoserver-dev/data_dir"
 else
    sudo mkdir "/linuxdata/geoserver-dev/data_dir"
+fi
+
+if [ -d "/linuxdata/geoserver-dev/geoserver_data" ]
+then
+   echo "Directory Exists /linuxdata/geoserver-dev/geoserver_data"
+else
+   sudo mkdir "/linuxdata/geoserver-dev/geoserver_data"
+fi
+
+
+if [ -d "/linuxdata/geoserver-dev/geocache" ]
+then
+   echo "Directory Exists /linuxdata/geoserver-dev/geocache"
+else
+   sudo mkdir "/linuxdata/geoserver-dev/geocache"
 fi
 
 
@@ -54,4 +70,4 @@ then
 fi
 
 docker stop geoserver-dev
-docker run --rm --pull=always --name='geoserver-dev' --hostname geoserver-dev  --env-file=$SCRIPTPATH$ENV_FILE  --mount type=bind,source=/linuxdata/geoserver-dev/data/,target=/data/ --mount type=bind,source=/linuxdata/geoserver-dev/data_dir/,target=/data_dir/  -p 10.17.0.10:9116-9120:9116-9120 -p 10.17.0.10:2224:22 -p 7014:8080  -d -i -t dbcawa/appsteam-geoserver:2023.07.04.10.3752 
+docker run --rm --pull=always --name='geoserver-dev' --hostname geoserver-dev  --env-file=$SCRIPTPATH$ENV_FILE  --mount type=bind,source=/linuxdata/geoserver-dev/data/,target=/data/ --mount type=bind,source=/linuxdata/geoserver-dev/data_dir/,target=/opt/geoserver/data_dir/ --mount type=bind,source=/linuxdata/geoserver-dev/geoserver_data/,target=/opt/geoserver/geoserver_data/ --mount type=bind,source=/linuxdata/geoserver-dev/geocache/,target=/opt/geoserver/geocache/ -p 10.17.0.10:9116-9120:9116-9120 -p 10.17.0.10:2224:22 -p 7014:8080  -d -i -t dbcawa/appsteam-geoserver:2023.07.04.10.3752 
