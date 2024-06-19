@@ -1,6 +1,6 @@
 **Required Files:**
 
-Ubuntu 22.04 Can be downloaded here:   
+Ubuntu 24.04 Can be downloaded here:   
 https://ubuntu.com/download/server   
 
 Putty SSH Client can be downloaded here:   
