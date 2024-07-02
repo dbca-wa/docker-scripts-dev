@@ -21,4 +21,4 @@ Putty SSH Client can be downloaded here:
     
 ### Installation and Setup 
 
-*** Step 1*** Installing Virtualbox https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/virtualbox_installation.md
+**Step 1** Installing Virtualbox https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/virtualbox_installation.md
