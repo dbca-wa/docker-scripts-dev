@@ -1,4 +1,5 @@
-**Required Files:**
+
+### Required Files
 
 Microsoft Visual C++ Redistributable    
 https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170    
@@ -18,6 +19,7 @@ https://ubuntu.com/download/server
 Putty SSH Client can be downloaded here:   
 [https://github.com/dbca-wa/docker-scripts-dev/blob/main/windows_vbox/installation/putty.exe?raw=true   ](https://github.com/dbca-wa/docker-scripts-dev/raw/main/windows_vbox/installation/putty.exe)
     
+### Installing Virtual Environment
    
 **Step 1. Install Virtual Box**
 
