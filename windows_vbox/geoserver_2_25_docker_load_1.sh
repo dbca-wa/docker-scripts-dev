@@ -86,7 +86,11 @@ then
 fi
 
 docker stop $DOCKER_HOSTNAME 
-docker run --rm --pull=always --name=$DOCKER_HOSTNAME --hostname $DOCKER_HOSTNAME  --env-file=$SCRIPTPATH$ENV_FILE  --mount type=bind,source=/linuxdata/$LINUX_DIR/data/,target=/data/  --mount type=bind,source=/linuxdata/$LINUX_DIR/data_dir/,target=/opt/geoserver/data_dir/ --mount type=bind,source=/linuxdata/$LINUX_DIR/geoserver_data/,target=/opt/geoserver/geoserver_data/ --mount type=bind,source=/linuxdata/$LINUX_DIR/opt_geoserver_data/,target=/opt/geoserver_data/ --mount type=bind,source=/linuxdata/$LINUX_DIR/geocache/,target=/opt/geoserver/geocache/ --mount type=bind,source=/linuxdata/$LINUX_DIR/container/,target=/container/ -p 10.17.0.10:9186-9190:9186-9190 -p 10.17.0.10:2247:22 -p 7027:8080  -d -i -t dbcawa/appsteam-geoserver:2024.06.27.04.3500 
+docker run --rm --pull=always --name=$DOCKER_HOSTNAME --hostname $DOCKER_HOSTNAME  --env-file=$SCRIPTPATH$ENV_FILE  --mount type=bind,source=/linuxdata/$LINUX_DIR/data/,target=/data/  --mount type=bind,source=/linuxdata/$LINUX_DIR/data_dir/,target=/opt/geoserver/data_dir/ --mount type=bind,source=/linuxdata/$LINUX_DIR/geoserver_data/,target=/opt/geoserver/geoserver_data/ --mount type=bind,source=/linuxdata/$LINUX_DIR/opt_geoserver_data/,target=/opt/geoserver_data/ --mount type=bind,source=/linuxdata/$LINUX_DIR/geocache/,target=/opt/geoserver/geocache/ --mount type=bind,source=/linuxdata/$LINUX_DIR/container/,target=/container/ -p 10.17.0.10:9186-9190:9186-9190 -p 10.17.0.10:2247:22 -p 7027:8080  -d -i -t dbcawa/appsteam-geoserver:2024.07.05.03.1735_ver2.25
+
+
+
+# 2024.06.27.04.3500 
 
 #2024.06.25.08.4318
 
