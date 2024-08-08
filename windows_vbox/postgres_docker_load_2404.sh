@@ -36,4 +36,4 @@ else
 fi
 
 docker stop postgres-dev
-docker run --rm --pull=always --name=postgres2404-dev --hostname postgres2404-dev --mount type=bind,source=/linuxdata/postgres-dev/data/,target=/data/ --mount type=bind,source=/data/,target=/datadev  -p 15432:5432  -d -i -t dbcawa/docker_app_dev:postgresubuntu2404_latest
+docker run --rm --pull=always --name=postgres2404-dev --hostname postgres2404-dev --mount type=bind,source=/linuxdata/postgres2404-dev/data/,target=/data/ --mount type=bind,source=/data/,target=/datadev  -p 15432:5432  -d -i -t dbcawa/docker_app_dev:postgresubuntu2404_latest
