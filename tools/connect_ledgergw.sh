@@ -1,3 +1,3 @@
 #!/bin/bash
-docker exec -it ledger-dev su container
+docker exec -it ledger-dev bash
 
