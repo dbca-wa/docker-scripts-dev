@@ -1,2 +1,2 @@
 #!/bin/bash
-docker exec -it wildlifecompliance-dev su container
+docker exec -it wildlifecompliance-dev bash
