@@ -23,9 +23,9 @@ Host 10.17.0.1
 ```
 
 # Crontab Docker Image and Log cleanup
-00 11  * * 0   root journalctl --vacuum-size=100M
-30 11    * * *   root docker system prune -f --all
-
+00 11  * * 0   root journalctl --vacuum-size=100M    
+30 11    * * *   root docker system prune -f --all    
+    
 # Virtual Box (Linux issue)
 
 # Question 1. Error Error: ENOSPC: System limit for number of file watchers reached, watch
