@@ -22,6 +22,9 @@ Host 10.17.0.1
   IdentityFile ~/.ssh/id_ed25519
 ```
 
+# Crontab Docker Image and Log cleanup
+00 11  * * 0   root journalctl --vacuum-size=100M
+30 11    * * *   root docker system prune -f --all
 
 # Virtual Box (Linux issue)
 
