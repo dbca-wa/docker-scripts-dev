@@ -9,9 +9,9 @@
 # Creating a new database in postgress
 
 1. CREATE DATABASE &lt; new database name &gt;;
-2. CREATE USER ledger_dev WITH PASSWORD '<generated Password>';
-3. GRANT ALL PRIVILEGES ON DATABASE "<new database name>" to <new database user>;
-4. \c <new database name>
+2. CREATE USER ledger_dev WITH PASSWORD '&lt; generated Password&gt;';
+3. GRANT ALL PRIVILEGES ON DATABASE "&lt; new database name>" to &lt; new database user&gt;;
+4. \c &lt; new database name>
 create extension postgis;
-5. GRANT ALL ON ALL TABLES IN SCHEMA public TO <new database user>;
-6. GRANT ALL ON SCHEMA public TO <new database user>;
+5. GRANT ALL ON ALL TABLES IN SCHEMA public TO &lt; new database user&gt;;
+6. GRANT ALL ON SCHEMA public TO &lt; new database user&gt;;
