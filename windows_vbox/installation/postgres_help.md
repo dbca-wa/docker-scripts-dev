@@ -8,7 +8,7 @@
 
 # Creating a new database in postgress
 
-1. CREATE DATABASE <new database name>;
+1. CREATE DATABASE &#8592; new database name &#8594;;
 2. CREATE USER ledger_dev WITH PASSWORD '<generated Password>';
 3. GRANT ALL PRIVILEGES ON DATABASE "<new database name>" to <new database user>;
 4. \c <new database name>
