@@ -30,6 +30,7 @@ PBSV1 : 7025 http://10.17.0.10:7026
 Geoserver2: 7026 http://10.17.0.10:7026  
 Geoserver1_2.25: 7027 http://10.17.0.10:7027   
 BFRS : 7028 http://10.17.0.10:7028   
+Thermal Imaging Processing: 7029 http://10.17.0.10:7029        
 
 **Container Dev Ports**   
 Postgres: 9011-9020 http://10.17.0.10:9011   
@@ -59,7 +60,8 @@ Fee Waiver: 9171-9175 http://10.17.0.10:9171
 PBSv1: 9176-9180 http://10.17.0.10:9176     
 Geoserver2: 9181-9185 http://10.17.0.10:9181    
 Geoserver1_2.25: 9186-9190 http://10.17.0.10:9186   
-BFRS: 9191-9195 http://10.17.0.10:9191     
+BFRS: 9191-9195 http://10.17.0.10:9191  
+Thermal Imaging Processing:  9196-9200 http://10.17.0.10:9196    
      
 **Container SSH Ports**   
 Postgres: 2223    
