@@ -34,6 +34,7 @@ Thermal Imaging Processing: 7029 http://10.17.0.10:7029
 BFRS Dfes Wrapper: 7030 http://10.17.0.10:7030   
 Spatial Layer Monitor: 7031 http://10.17.0.10:7031     
 SSS Maps: 7032 http://10.17.0.10:7032         
+Statdev: 7033 http://10.17.0.10:7033    
 
 **Container Dev Ports**   
 Postgres: 9011-9020 http://10.17.0.10:9011   
@@ -68,6 +69,7 @@ Thermal Imaging Processing:  9196-9200 http://10.17.0.10:9196
 BFRS Dfes Wrapper: 9201-9205 http://10.17.0.10:9201   
 Spatial Layer Monitor: 9206-9210 http://10.17.0.10:9206    
 SSS Maps: 9211-9215 http://10.17.0.10:9211    
+Statdev: 9216-9220 http://10.17.0.10:9216     
 
 **Container SSH Ports**   
 Postgres: 2223    
