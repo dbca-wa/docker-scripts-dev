@@ -36,4 +36,4 @@ else
 fi
 
 docker stop postgres2404-dev-16
-docker run --rm --pull=always --name=postgres2404-dev --hostname postgres2404-dev-16 --mount type=bind,source=/linuxdata/postgres2404-dev-16/data/,target=/data/ --mount type=bind,source=/data/,target=/datadev  -p 25432:5432  -d -i -t ghcr.io/dbca-wa/docker-apps-dev:postgresubuntu2404_16_latest
+docker run --rm --pull=always --name=postgres2404-dev-16 --hostname postgres2404-dev-16 --mount type=bind,source=/linuxdata/postgres2404-dev-16/data/,target=/data/ --mount type=bind,source=/data/,target=/datadev  -p 25432:5432  -d -i -t ghcr.io/dbca-wa/docker-apps-dev:postgresubuntu2404_16_latest
