@@ -2,7 +2,7 @@
 
 SCRIPT=$(readlink -f $0)
 SCRIPTPATH=`dirname $SCRIPT`
-DOCKER_IMAGE="dbcawa/docker_app_dev:pbs_dev_2025.04.15.04.2232"
+DOCKER_IMAGE="dbcawa/docker_app_dev:pbs_dev_2024.10.23.02.2303"
 INSTANCE_NAME="pbs-legacy-dev"
 CONTAINER_WEB_PORT="10030"
 DEVPORTS="10201-10205"
