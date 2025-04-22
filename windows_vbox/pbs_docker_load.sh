@@ -6,7 +6,7 @@ DOCKER_IMAGE="dbcawa/docker_app_dev:pbs_dev_2025.04.15.04.2232"
 INSTANCE_NAME="pbs-legacy-dev"
 CONTAINER_WEB_PORT="10030"
 DEVPORTS="10201-10205"
-ENV_FILE="/env/bfrs_dfes_wrapper.env"
+ENV_FILE="/env/pbs_legacy.env"
 
 if [ "$1" ]
 then
