@@ -1,0 +1,66 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres16-dev
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate  
+  selector:
+    matchLabels:
+      app: postgres16-dev
+  template:
+    metadata:
+      labels:
+        app: postgres16-dev
+      namespace: jason	
+    spec:
+      initContainers:
+          - name: file-permission-container
+            image: busybox
+            command: ["sh", "-c", "mkdir /var/lib/postgresql/data/data; chown -R 999:999 /var/lib/postgresql/data/ "]              
+            volumeMounts:
+              - name: postgres16-dev
+                mountPath: /var/lib/postgresql/data
+            securityContext:
+              runAsUser: 0 # Run as root user
+              allowPrivilegeEscalation: true
+      containers:
+        - env:            
+            - name: PGDATA
+              value: /var/lib/postgresql/data/pgdata
+          name: postgres16-dev
+          image: ghcr.io/dbca-wa/docker-apps-dev:postgres16_2025.05.05.14.3100  
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5432
+              name: tcp5432
+              protocol: TCP
+          stdin: true          
+          tty: true     
+          volumeMounts:
+            - mountPath: /var/lib/postgresql/data
+              name: postgres16-dev
+              subPath: data                      
+          resources:
+            limits:
+              cpu: '1'
+              memory: 2Gi
+            requests:
+              cpu: 10m
+              memory: 2Gi          
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL          
+            privileged: false
+            readOnlyRootFilesystem: false
+            runAsNonRoot: false
+            runAsUser: 999 # See https://github.com/docker-library/postgres/blob/bfc5d81c8f5647c690f452dc558e64fddb1802f6/10/Dockerfile
+            runAsGroup: 999                    
+      volumes:
+        - name:  postgres16-dev
+          persistentVolumeClaim:
+            claimName: postgres16-dev          
+
