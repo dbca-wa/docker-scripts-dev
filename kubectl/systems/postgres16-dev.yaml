@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: postgres16-dev
+  name: postgres16-userdev
 spec:
   replicas: 1
   strategy:
     type: Recreate  
   selector:
     matchLabels:
-      app: postgres16-dev
+      workload.user.cattle.io/workloadselector: apps.deployment-jason-postgres16-userdev
   template:
     metadata:
       labels:
-        app: postgres16-dev
+        workload.user.cattle.io/workloadselector: apps.deployment-jason-postgres16-userdev
       namespace: jason	
     spec:
       initContainers:
@@ -20,7 +20,7 @@ spec:
             image: busybox
             command: ["sh", "-c", "mkdir /var/lib/postgresql/data/data; chown -R 999:999 /var/lib/postgresql/data/ "]              
             volumeMounts:
-              - name: postgres16-dev
+              - name: postgres16-userdev
                 mountPath: /var/lib/postgresql/data
             securityContext:
               runAsUser: 0 # Run as root user
@@ -29,8 +29,12 @@ spec:
         - env:            
             - name: PGDATA
               value: /var/lib/postgresql/data/pgdata
-          name: postgres16-dev
-          image: ghcr.io/dbca-wa/docker-apps-dev:postgres16_2025.05.05.14.3100  
+          envFrom:
+            - secretRef:
+                name: postgres16-userdev
+                optional: false              
+          name: postgres16-userdev
+          image: ghcr.io/dbca-wa/docker-apps-dev:postgres16_latest  
           imagePullPolicy: Always
           ports:
             - containerPort: 5432
@@ -40,7 +44,7 @@ spec:
           tty: true     
           volumeMounts:
             - mountPath: /var/lib/postgresql/data
-              name: postgres16-dev
+              name: postgres16-userdev
               subPath: data                      
           resources:
             limits:
@@ -57,10 +61,10 @@ spec:
             privileged: false
             readOnlyRootFilesystem: false
             runAsNonRoot: false
-            runAsUser: 999 # See https://github.com/docker-library/postgres/blob/bfc5d81c8f5647c690f452dc558e64fddb1802f6/10/Dockerfile
+            runAsUser: 999 
             runAsGroup: 999                    
       volumes:
-        - name:  postgres16-dev
+        - name:  postgres16-userdev
           persistentVolumeClaim:
-            claimName: postgres16-dev          
+            claimName: postgres16-userdev          
 
