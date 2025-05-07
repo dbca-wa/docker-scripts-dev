@@ -4,7 +4,7 @@ metadata:
   name: postgres16-userdev
 spec:
   selector:
-    workload.user.cattle.io/workloadselector: apps.deployment-jason-postgres16-userdev
+    workload.user.cattle.io/workloadselector: apps.deployment-{{namespace}}-postgres16-userdev
   ports:
     - protocol: TCP
       port: 5432

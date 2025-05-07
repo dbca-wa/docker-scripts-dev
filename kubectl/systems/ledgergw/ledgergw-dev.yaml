@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: parkstayv2-userdev
+  name: ledgergw-userdev
 spec:
   replicas: 1
   strategy:
     type: Recreate  
   selector:
     matchLabels:
-      workload.user.cattle.io/workloadselector: apps.deployment-jason-parkstayv2-userdev
+      workload.user.cattle.io/workloadselector: apps.deployment-{{namespace}}-ledgergw-userdev
   template:
     metadata:
       labels:
-        workload.user.cattle.io/workloadselector: apps.deployment-jason-parkstayv2-userdev	
+        workload.user.cattle.io/workloadselector: apps.deployment-{{namespace}}-ledgergw-userdev	
     spec:
       initContainers:
           - name: file-permission-container
             image: busybox
             command: ["sh", "-c", "mkdir -p /mnt/storage/data; mkdir -p /mnt/storage/container ; chown -R 200000:20000 /mnt/storage/"]              
             volumeMounts:
-              - name: parkstayv2-userdev
+              - name: ledgergw-userdev
                 mountPath: /mnt/storage/
             securityContext:
               runAsUser: 0 # Run as root user
@@ -32,8 +32,8 @@ spec:
               value: 'False'
             - name: ENABLE_CRON
               value: 'False'
-          name: parkstayv2-userdev
-          image: dbcawa/docker_app_dev:parkstay_v2_latest
+          name: ledgergw-userdev
+          image: dbcawa/docker_app_dev:ledger_dev_latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -43,12 +43,12 @@ spec:
           tty: true     
           volumeMounts:
             - mountPath: /data/
-              name: parkstayv2-userdev
+              name: ledgergw-userdev
               subPath: data                  
             - mountPath: /home/container/
-              name: parkstayv2-userdev
+              name: ledgergw-userdev
               subPath: container   
-          workingDir: /data/data/projects/parkstay_bs_v2/
+          workingDir: /data/data/projects/ledger/
           resources:
             limits:
               cpu: '1'
@@ -66,7 +66,7 @@ spec:
             runAsNonRoot: true
             runAsUser: 200000           
       volumes:
-        - name:  parkstayv2-userdev
+        - name:  ledgergw-userdev
           persistentVolumeClaim:
-            claimName: parkstayv2-userdev
+            claimName: ledgergw-userdev
             

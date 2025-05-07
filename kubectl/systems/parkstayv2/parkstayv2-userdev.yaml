@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kaartdijin-boodja-userdev
+  name: parkstayv2-userdev
 spec:
   replicas: 1
   strategy:
     type: Recreate  
   selector:
     matchLabels:
-      workload.user.cattle.io/workloadselector: apps.deployment-jason-kaartdijin-boodja-userdev
+      workload.user.cattle.io/workloadselector: apps.deployment-{{namespace}}-parkstayv2-userdev
   template:
     metadata:
       labels:
-        workload.user.cattle.io/workloadselector: apps.deployment-jason-kaartdijin-boodja-userdev	
+        workload.user.cattle.io/workloadselector: apps.deployment-{{namespace}}-parkstayv2-userdev	
     spec:
       initContainers:
           - name: file-permission-container
             image: busybox
             command: ["sh", "-c", "mkdir -p /mnt/storage/data; mkdir -p /mnt/storage/container ; chown -R 200000:20000 /mnt/storage/"]              
             volumeMounts:
-              - name: kaartdijin-boodja-userdev
+              - name: parkstayv2-userdev
                 mountPath: /mnt/storage/
             securityContext:
               runAsUser: 0 # Run as root user
@@ -32,7 +32,7 @@ spec:
               value: 'False'
             - name: ENABLE_CRON
               value: 'False'
-          name: kaartdijin-boodja-userdev
+          name: parkstayv2-userdev
           image: dbcawa/docker_app_dev:parkstay_v2_latest
           imagePullPolicy: Always
           ports:
@@ -43,10 +43,10 @@ spec:
           tty: true     
           volumeMounts:
             - mountPath: /data/
-              name: kaartdijin-boodja-userdev
+              name: parkstayv2-userdev
               subPath: data                  
             - mountPath: /home/container/
-              name: kaartdijin-boodja-userdev
+              name: parkstayv2-userdev
               subPath: container   
           workingDir: /data/data/projects/parkstay_bs_v2/
           resources:
@@ -66,7 +66,7 @@ spec:
             runAsNonRoot: true
             runAsUser: 200000           
       volumes:
-        - name:  kaartdijin-boodja-userdev
+        - name:  parkstayv2-userdev
           persistentVolumeClaim:
-            claimName: kaartdijin-boodja-userdev
+            claimName: parkstayv2-userdev
             

@@ -8,12 +8,11 @@ spec:
     type: Recreate  
   selector:
     matchLabels:
-      workload.user.cattle.io/workloadselector: apps.deployment-jason-postgres16-userdev
+      workload.user.cattle.io/workloadselector: apps.deployment-{{namespace}}-postgres16-userdev
   template:
     metadata:
       labels:
-        workload.user.cattle.io/workloadselector: apps.deployment-jason-postgres16-userdev
-      namespace: jason	
+        workload.user.cattle.io/workloadselector: apps.deployment-{{namespace}}-postgres16-userdev
     spec:
       initContainers:
           - name: file-permission-container
@@ -29,10 +28,10 @@ spec:
         - env:            
             - name: PGDATA
               value: /var/lib/postgresql/data/pgdata
-          envFrom:
+          envFrom:                 
             - secretRef:
-                name: postgres16-userdev
-                optional: false              
+                name: {{system}}-{{namespace}}-userdev
+                optional: false                         
           name: postgres16-userdev
           image: ghcr.io/dbca-wa/docker-apps-dev:postgres16_latest  
           imagePullPolicy: Always

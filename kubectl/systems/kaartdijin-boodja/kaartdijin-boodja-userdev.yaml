@@ -1,30 +1,29 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: appmonitor-userdev
+  name: kaartdijin-boodja-userdev
 spec:
   replicas: 1
   strategy:
     type: Recreate  
   selector:
     matchLabels:
-      app: appmonitor-userdev
+      workload.user.cattle.io/workloadselector: apps.deployment-{{namespace}}-kaartdijin-boodja-userdev
   template:
     metadata:
       labels:
-        app: appmonitor-userdev
-      namespace: jason	
+        workload.user.cattle.io/workloadselector: apps.deployment-{{namespace}}-kaartdijin-boodja-userdev	
     spec:
       initContainers:
           - name: file-permission-container
             image: busybox
             command: ["sh", "-c", "mkdir -p /mnt/storage/data; mkdir -p /mnt/storage/container ; chown -R 200000:20000 /mnt/storage/"]              
             volumeMounts:
-              - name: appmonitor-userdev
+              - name: kaartdijin-boodja-userdev
                 mountPath: /mnt/storage/
             securityContext:
               runAsUser: 0 # Run as root user
-              allowPrivilegeEscalation: true    
+              allowPrivilegeEscalation: true
       containers:
         - env:
             - name: DEBUG
@@ -33,8 +32,8 @@ spec:
               value: 'False'
             - name: ENABLE_CRON
               value: 'False'
-          name: appmonitor-userdev
-          image: dbcawa/docker_app_dev:appmonitor_dev_latest
+          name: kaartdijin-boodja-userdev
+          image: dbcawa/docker_app_dev:parkstay_v2_latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -44,12 +43,12 @@ spec:
           tty: true     
           volumeMounts:
             - mountPath: /data/
-              name: appmonitor-userdev
+              name: kaartdijin-boodja-userdev
               subPath: data                  
             - mountPath: /home/container/
-              name: appmonitor-userdev
+              name: kaartdijin-boodja-userdev
               subPath: container   
-          workingDir: /data/data/projects/appmonitor/
+          workingDir: /data/data/projects/parkstay_bs_v2/
           resources:
             limits:
               cpu: '1'
@@ -67,7 +66,7 @@ spec:
             runAsNonRoot: true
             runAsUser: 200000           
       volumes:
-        - name:  appmonitor-userdev
+        - name:  kaartdijin-boodja-userdev
           persistentVolumeClaim:
-            claimName: appmonitor-userdev
+            claimName: kaartdijin-boodja-userdev
             
