@@ -26,12 +26,14 @@ spec:
               allowPrivilegeEscalation: true
       containers:
         - env:
-            - name: DEBUG
-              value: 'True'
             - name: ENABLE_WEB
               value: 'False'
             - name: ENABLE_CRON
               value: 'False'
+          envFrom:
+            - secretRef:
+                name: {{system}}-{{namespace}}-userdev
+                optional: false                
           name: parkstayv2-userdev
           image: dbcawa/docker_app_dev:parkstay_v2_latest
           imagePullPolicy: Always
