@@ -1,4 +1,4 @@
-import requests
+# import requests
 import sys
 import json
 import re
@@ -6,14 +6,41 @@ import secrets
 import subprocess
 import os
 import base64
+import sys
 
 system = sys.argv[1]
 namespace = "jason"
 deployment_json = {}
 hash_random = secrets.token_hex(nbytes=6)
 
+kubectl_cmd = "kubectl.exe"
+git_cmd = "git.exe"
+
+if os.name == 'posix':
+    kubectl_cmd = "kubectl"
+    git_cmd = "git"
+
+try:
+    subprocess.run([kubectl_cmd, "version"]) 
+except Exception as e:
+    print ("Error: kubectl command not found")
+    print (e)
+    sys.exit(1)
+
+try:
+    subprocess.run([git_cmd, "version"]) 
+except Exception:
+    print ("Error: git command not found")
+    sys.exit(1)
+
 def deploy_workload(deployment_json,system_to_deploy):
 
+    try:
+        subprocess.run([kubectl_cmd, "scale", "--replicas=0", "deployment/"+deployment_json["workload_name"]]) 
+    except Exception as e:
+        print ("Error: scaling deployment down")
+        print (e)
+        
     # deploy storage    
     if "workload_storage_file" in deployment_json:    
         print ("Deploying storage for "+deployment_json["name"])
@@ -24,7 +51,7 @@ def deploy_workload(deployment_json,system_to_deploy):
             #print(yaml_data)
         with open(tmp_storage_path, "w") as f:
             f.write(yaml_data)
-        subprocess.run(["kubectl.exe", "apply","-f",tmp_storage_path]) 
+        subprocess.run([kubectl_cmd, "apply","-f",tmp_storage_path]) 
         os.remove(tmp_storage_path)
 
     # deploy secrets
@@ -51,9 +78,8 @@ def deploy_workload(deployment_json,system_to_deploy):
             with open(tmp_secrets_path, "w") as f:
                 f.write(yaml_data)
 
-            subprocess.run(["kubectl.exe", "apply","-f",tmp_secrets_path]) 
+            subprocess.run([kubectl_cmd, "apply","-f",tmp_secrets_path]) 
             os.remove(tmp_secrets_path)
-
 
     if "workload_deployment_file" in deployment_json:
         # deploy workloads
@@ -66,8 +92,39 @@ def deploy_workload(deployment_json,system_to_deploy):
         with open(tmp_workload_path, "w") as f:
             f.write(yaml_data)
 
-        subprocess.run(["kubectl.exe", "apply","-f",tmp_workload_path]) 
+        subprocess.run([kubectl_cmd, "apply","-f",tmp_workload_path]) 
         os.remove(tmp_workload_path)
+
+    if "workload_service_file" in deployment_json:
+        # deploy workloads
+        print ("Deploying service for "+deployment_json["name"])
+        tmp_workload_path="./tmp/"+hash_random+"-"+deployment_json["workload_service_file"]
+        with open("./systems/"+system_to_deploy+"/"+deployment_json["workload_service_file"]) as file_data:
+            yaml_data = file_data.read() 
+            yaml_data = re.sub("{{namespace}}", namespace, yaml_data)
+            yaml_data = re.sub("{{system}}", system_to_deploy, yaml_data)            
+        with open(tmp_workload_path, "w") as f:
+            f.write(yaml_data)
+
+        subprocess.run([kubectl_cmd, "apply","-f",tmp_workload_path]) 
+        os.remove(tmp_workload_path)
+
+# Function End
+# Start of Initialisation
+try:
+    subprocess.run([git_cmd, "pull"]) 
+except Exception:
+    print ("Error: Unable to Update Respository")
+    sys.exit(1)
+
+try:
+    subprocess.run([kubectl_cmd,"config","set-context","--current","--namespace="+namespace]) 
+except Exception:
+    print ("Error: Unable to Update Respository")
+    sys.exit(1)
+
+if not os.path.exists("./tmp/"):
+    os.mkdir("./tmp/")
 
 #1. add check if file doesn't exist
 
@@ -82,20 +139,4 @@ if "dependency_workloads" in deployment_json:
             dependant_deployment_json = json.load(json_data)            
             deploy_workload(dependant_deployment_json,dw)
 
-# import os
-# os.exit()
-deploy_workload(deployment_json,system)
-
-# if "workload_deployment_file" in deployment_json:
-
-
-#     print ("Deploying "+deployment_json["name"])
-#     tmp_path="./tmp/"+hash_random+"-"+deployment_json["workload_deployment_file"]
-#     with open("./systems/"+system+"/"+deployment_json["workload_deployment_file"]) as file_data:
-#         yaml_data = file_data.read() 
-#         yaml_data = re.sub("{{namespace}}", namespace, yaml_data)
-#         #print(yaml_data)
-#     with open(tmp_path, "w") as f:
-#         f.write(yaml_data)
-
-#     subprocess.run(["kubectl.exe", "apply","-f",tmp_path]) 
+    deploy_workload(deployment_json,system)

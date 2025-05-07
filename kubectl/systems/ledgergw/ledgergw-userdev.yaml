@@ -32,6 +32,10 @@ spec:
               value: 'False'
             - name: ENABLE_CRON
               value: 'False'
+          envFrom:
+            - secretRef:
+                name: {{system}}-{{namespace}}-userdev
+                optional: false                  
           name: ledgergw-userdev
           image: dbcawa/docker_app_dev:ledger_dev_latest
           imagePullPolicy: Always

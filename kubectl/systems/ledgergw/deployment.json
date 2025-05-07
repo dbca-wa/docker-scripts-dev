@@ -1,0 +1,9 @@
+{
+    "name": "LedgerGW Development Database",
+    "workload_name" : "ledgergw-userdev",
+    "workload_deployment_file": "ledgergw-userdev.yaml",    
+    "workload_storage_file": "ledgergw-userdev-storage.yaml",    
+    "use_generic_file" : true,    
+    "environment_file" : "./env/ledgergw.env",
+    "dependency_workloads": ["postgres16"]
+}
