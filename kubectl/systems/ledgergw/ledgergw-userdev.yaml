@@ -26,12 +26,6 @@ spec:
               allowPrivilegeEscalation: true
       containers:
         - env:
-            - name: DEBUG
-              value: 'True'
-            - name: ENABLE_WEB
-              value: 'False'
-            - name: ENABLE_CRON
-              value: 'False'
           envFrom:
             - secretRef:
                 name: {{system}}-{{namespace}}-userdev
