@@ -26,14 +26,12 @@ spec:
               allowPrivilegeEscalation: true
       containers:
         - env:
-            - name: DEBUG
-              value: 'True'
-            - name: ENABLE_WEB
-              value: 'False'
-            - name: ENABLE_CRON
-              value: 'False'
+          envFrom:
+            - secretRef:
+                name: {{system}}-{{namespace}}-userdev
+                optional: false      
           name: kaartdijin-boodja-userdev
-          image: dbcawa/docker_app_dev:parkstay_v2_latest
+          image: dbcawa/docker_app_dev:gis_kaartdijin_boodja_dev_latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -48,7 +46,7 @@ spec:
             - mountPath: /home/container/
               name: kaartdijin-boodja-userdev
               subPath: container   
-          workingDir: /data/data/projects/parkstay_bs_v2/
+          workingDir: /data/data/projects/gis_kaartdijin_boodja/
           resources:
             limits:
               cpu: '1'
