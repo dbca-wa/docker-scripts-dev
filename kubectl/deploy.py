@@ -13,9 +13,7 @@ settings_json = {}
 with open("./config/settings.json") as json_data:
     settings_json = json.load(json_data)
 namespace  = settings_json["namespace"]
-print ("JKJ")
-print (namespace)
-os.exit()
+
 deployment_json = {}
 hash_random = secrets.token_hex(nbytes=6)
 
@@ -54,6 +52,7 @@ def deploy_workload(deployment_json,system_to_deploy):
         with open("./systems/"+system_to_deploy+"/"+deployment_json["workload_storage_file"]) as file_data:
             yaml_data = file_data.read() 
             yaml_data = re.sub("{{namespace}}", namespace, yaml_data)
+            yaml_data = re.sub("{{system}}", system, yaml_data)
             #print(yaml_data)
         with open(tmp_storage_path, "w") as f:
             f.write(yaml_data)

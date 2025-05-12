@@ -1,39 +1,41 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ubuntu2404-userdev
+  name: {{system}}-userdev
 spec:
   replicas: 1
   strategy:
     type: Recreate  
   selector:
     matchLabels:
-      workload.user.cattle.io/workloadselector: apps.deployment-{{namespace}}-ubuntu2404-userdev
+      workload.user.cattle.io/workloadselector: apps.deployment-{{namespace}}-{{system}}-userdev
   template:
     metadata:
       labels:
-        workload.user.cattle.io/workloadselector: apps.deployment-{{namespace}}-ubuntu2404-userdev	
+        workload.user.cattle.io/workloadselector: apps.deployment-{{namespace}}-{{system}}-userdev	
     spec:
       initContainers:
           - name: file-permission-container
             image: busybox
             command: ["sh", "-c", "mkdir -p /mnt/storage/data; mkdir -p /mnt/storage/container ; chown -R 200000:20000 /mnt/storage/"]              
             volumeMounts:
-              - name: ubuntu2404-userdev
+              - name: {{system}}-userdev
                 mountPath: /mnt/storage/
             securityContext:
               runAsUser: 0 # Run as root user
               allowPrivilegeEscalation: true
       containers:
         - env:
-            - name: DEBUG
-              value: 'True'
             - name: ENABLE_WEB
               value: 'False'
             - name: ENABLE_CRON
               value: 'False'
-          name: ubuntu2404-userdev
-          image: dbcawa/docker_app_dev:parkstay_v2_latest
+          envFrom:
+            - secretRef:
+                name: {{system}}-{{namespace}}-userdev
+                optional: false                
+          name: {{system}}-userdev
+          image: ghcr.io/dbca-wa/docker-app-dev:gokart-sss-django_dev_latest 
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -43,12 +45,12 @@ spec:
           tty: true     
           volumeMounts:
             - mountPath: /data/
-              name: ubuntu2404-userdev
+              name: {{system}}-userdev
               subPath: data                  
             - mountPath: /home/container/
-              name: ubuntu2404-userdev
+              name: {{system}}-userdev
               subPath: container   
-          workingDir: /data/data/projects/ubuntu2404/
+          workingDir: /data/data/projects/gokart-sss-django/
           resources:
             limits:
               cpu: '1'
@@ -66,7 +68,7 @@ spec:
             runAsNonRoot: true
             runAsUser: 200000           
       volumes:
-        - name:  ubuntu2404-userdev
+        - name:  {{system}}-userdev
           persistentVolumeClaim:
-            claimName: ubuntu2404-userdev
+            claimName: {{system}}-userdev
             

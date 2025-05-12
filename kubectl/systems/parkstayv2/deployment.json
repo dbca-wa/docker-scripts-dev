@@ -1,5 +1,5 @@
 {
-    "name": "ParkstayV2 Development Database",
+    "name": "ParkstayV2 Development",
     "workload_name" : "parkstayv2-userdev",
     "workload_deployment_file": "parkstayv2-userdev.yaml",    
     "workload_storage_file": "parkstayv2-userdev-storage.yaml",    
