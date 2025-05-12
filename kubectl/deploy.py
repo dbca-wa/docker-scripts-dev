@@ -9,7 +9,13 @@ import base64
 import sys
 
 system = sys.argv[1]
-namespace = "jason"
+settings_json = {}
+with open("./config/settings.json") as json_data:
+    settings_json = json.load(json_data)
+namespace  = settings_json["namespace"]
+print ("JKJ")
+print (namespace)
+os.exit()
 deployment_json = {}
 hash_random = secrets.token_hex(nbytes=6)
 
