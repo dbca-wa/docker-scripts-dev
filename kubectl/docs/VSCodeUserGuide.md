@@ -37,7 +37,8 @@ After selecting the environment should begin to load in a new / refeshed window.
 
 ![image](https://github.com/user-attachments/assets/6a057aef-018c-448e-a44b-097d34cc8b7c)
 
-6. If your vscode looks like this then you are now in your development environment
+6. If your vscode looks like this then you are now in your development environment.
+
 ![image](https://github.com/user-attachments/assets/acb2089b-ed27-40fd-ae90-5061b8ef7435)
 
  
