@@ -16,10 +16,10 @@ python deploy.py <system>
 
 List running pods in Kubernetes in current namespace
 ```
-python get_pods.py <system>
+python get_pods.py
 ```
 
 Stop all running pods in current namespace.
 ```
-python stop_all_workloads.py <system>
+python stop_all_workloads.py
 ```
