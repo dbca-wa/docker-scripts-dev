@@ -22,6 +22,13 @@ Click the install on both extensions.
 2. Once installed Press the follow key combination Ctrl + Shift + P (becareful not to press Ctrl + F, this is different search)
 
 3. A popup box will appear and type into the search "Attach to Kuber" and select "Dev Containers: Attach to Running Kubernetes Containers"
+
 ![image](https://github.com/user-attachments/assets/69d2fcdf-d99a-456f-b492-b882ea76248c)
 
-4. 
+4. Another Popup will appear with all your running developments containers (pods). Choose the environment you want to attached to.  In this example will choode "Ubuntu2404)
+
+![image](https://github.com/user-attachments/assets/63fd8017-f3d5-4969-9420-fefcb8e52ab4)
+
+After selecting the environment should begin to load in a new / refeshed window.
+
+ 
