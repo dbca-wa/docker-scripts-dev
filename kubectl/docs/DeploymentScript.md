@@ -10,6 +10,7 @@
 
 2. To Check the work load has been deployed and is running.
    work loads can take time to deploy.  You can not access your development environment until your workload is successfully running.
+   
    ![image](https://github.com/user-attachments/assets/74ee5497-9aef-4a65-a12d-78451098208c)
 
    
