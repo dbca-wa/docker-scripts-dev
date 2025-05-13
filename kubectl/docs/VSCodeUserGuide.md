@@ -31,4 +31,13 @@ Click the install on both extensions.
 
 After selecting the environment should begin to load in a new / refeshed window.
 
+5. Select the working folder in this case after clicking "Select Folder" enter /data/data/projects/ubuntu2404/ and click Ok (this will setup the workspace in vscode)
+
+![image](https://github.com/user-attachments/assets/eef9e15b-0262-4b86-a231-77830197482d)
+
+![image](https://github.com/user-attachments/assets/6a057aef-018c-448e-a44b-097d34cc8b7c)
+
+6. If your vscode looks like this then you are now in your development environment
+![image](https://github.com/user-attachments/assets/acb2089b-ed27-40fd-ae90-5061b8ef7435)
+
  
