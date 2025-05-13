@@ -39,8 +39,8 @@ python get_pods.py
 ```
 If working you should see response "No resources found in karstenprehn namespace." otherwise if pods have already been deployed then will show a list of running pods
 
-9.kubectl is now setup.
-
+9.kubectl is now setup is now completed
+<br>
 
 10. Deployment Script 
 
