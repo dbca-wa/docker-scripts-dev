@@ -37,7 +37,7 @@ In directory c:\users\<home directory>\ create a folder called ".kube".
 ```
 python get_pods.py
 ```
-If working you should see response "No resources found in karstenprehn namespace." otherwise if pods have already been deployed then will show a list of running pods
+If working you should see response "No resources found in <namespace> namespace." otherwise if pods have already been deployed then will show a list of running pods
 
 9.kubectl is now setup is now completed
 <br>
