@@ -15,4 +15,5 @@
 
    
 3. Access your development environment in VSCode (Visual Studio Code)
-   [VSCode](./VSCodeUserGuide.md)
+   
+   [Visual Studio Code Guide to accessing kubernets](./VSCodeUserGuide.md)
