@@ -4,7 +4,6 @@
     "workload_deployment_file": "postgres16-dev.yaml",    
     "workload_storage_file": "postgres16-dev-storage.yaml",    
     "workload_service_file": "postgres16-dev-service.yaml",  
-    "workload_network_file": "postgres16-dev-network.yaml",  
     "use_generic_file" : true,    
     "environment_file" : "./env/postgres16.env",
     "dependency_workloads": ["postgres16"]
