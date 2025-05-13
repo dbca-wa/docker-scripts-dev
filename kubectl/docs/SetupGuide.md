@@ -41,3 +41,7 @@ If working you should see response "No resources found in karstenprehn namespace
 
 9.kubectl is now setup.
 
+10. Deployment Script
+11. 
+[Visual Studio Code Guide to accessing kubernets](./DeploymentScript.md)
+
