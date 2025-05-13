@@ -86,8 +86,9 @@ def deploy_workload(deployment_json,system_to_deploy):
             subprocess.run([kubectl_cmd, "apply","-f",tmp_secrets_path]) 
             os.remove(tmp_secrets_path)
 
+    # deploy workloads
     if "workload_deployment_file" in deployment_json:
-        # deploy workloads
+        
         print ("Deploying workload for "+deployment_json["name"])
         tmp_workload_path="./tmp/"+hash_random+"-"+deployment_json["workload_deployment_file"]
         with open("./systems/"+system_to_deploy+"/"+deployment_json["workload_deployment_file"]) as file_data:
@@ -100,8 +101,9 @@ def deploy_workload(deployment_json,system_to_deploy):
         subprocess.run([kubectl_cmd, "apply","-f",tmp_workload_path]) 
         os.remove(tmp_workload_path)
 
+    # deploy services
     if "workload_service_file" in deployment_json:
-        # deploy workloads
+        
         print ("Deploying service for "+deployment_json["name"])
         tmp_workload_path="./tmp/"+hash_random+"-"+deployment_json["workload_service_file"]
         with open("./systems/"+system_to_deploy+"/"+deployment_json["workload_service_file"]) as file_data:
@@ -114,8 +116,8 @@ def deploy_workload(deployment_json,system_to_deploy):
         subprocess.run([kubectl_cmd, "apply","-f",tmp_workload_path]) 
         os.remove(tmp_workload_path)
 
-    if "workload_network_file" in deployment_json:
-        # deploy workloads
+    # deploy network
+    if "workload_network_file" in deployment_json:        
         print ("Deploying network for "+deployment_json["name"])
         tmp_workload_path="./tmp/"+hash_random+"-"+deployment_json["workload_network_file"]
         with open("./systems/"+system_to_deploy+"/"+deployment_json["workload_network_file"]) as file_data:
