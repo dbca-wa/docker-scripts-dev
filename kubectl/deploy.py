@@ -114,6 +114,21 @@ def deploy_workload(deployment_json,system_to_deploy):
         subprocess.run([kubectl_cmd, "apply","-f",tmp_workload_path]) 
         os.remove(tmp_workload_path)
 
+    if "workload_network_file" in deployment_json:
+        # deploy workloads
+        print ("Deploying network for "+deployment_json["name"])
+        tmp_workload_path="./tmp/"+hash_random+"-"+deployment_json["workload_network_file"]
+        with open("./systems/"+system_to_deploy+"/"+deployment_json["workload_network_file"]) as file_data:
+            yaml_data = file_data.read() 
+            yaml_data = re.sub("{{namespace}}", namespace, yaml_data)
+            yaml_data = re.sub("{{system}}", system_to_deploy, yaml_data)            
+        with open(tmp_workload_path, "w") as f:
+            f.write(yaml_data)
+
+        subprocess.run([kubectl_cmd, "apply","-f",tmp_workload_path]) 
+        os.remove(tmp_workload_path)
+
+
 # Function End
 # Start of Initialisation
 try:
