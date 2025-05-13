@@ -7,7 +7,9 @@ Instruction below on how to setup kubectl on windows.
 <BR>
 
 2.git clone this repo into your home directory. C:\Users\<home directory>\
+```
 git clone https://github.com/dbca-wa/docker-scripts-dev.git
+```
 <BR>
 
 3.Login in to rancher and download the kube config file. 
