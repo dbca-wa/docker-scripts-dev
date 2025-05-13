@@ -33,7 +33,7 @@ In directory c:\users\<home directory>\ create a folder called ".kube".
 }
 ```
 
-8. Test connection by running the following command in c:\Users\<home directory>\docker-scripts-dev\kubectl\
+8.Test connection by running the following command in c:\Users\<home directory>\docker-scripts-dev\kubectl\
 ```
 python get_pods.py
 ```
@@ -42,7 +42,7 @@ If working you should see response "No resources found in karstenprehn namespace
 9.kubectl is now setup is now completed
 <br>
 
-10. Deployment Script 
+10.Deployment Script 
 
 [Deployment Scripts](./DeploymentScript.md)
 
