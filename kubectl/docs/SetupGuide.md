@@ -25,7 +25,7 @@ In directory c:\users\<home directory>\ create a folder called ".kube".
 
 6.Copy the contents of the file download in step 2 in to c:\users\<home directory>\.kube\config
 
-7. create settings.json file in c:\Users\<home directory>\docker-scripts-dev\kubectl\config\
+create settings.json file in c:\Users\<home directory>\docker-scripts-dev\kubectl\config\
    Add the following json content into the file and update namespace to your namespace.
 ```
 {
