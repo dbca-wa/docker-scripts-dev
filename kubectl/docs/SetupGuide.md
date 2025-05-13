@@ -7,7 +7,9 @@ Instruction below on how to setup kubectl on windows.
 <BR>
 
 2.git clone this repo into your home directory. C:\Users\<home directory>\
+```
 git clone https://github.com/dbca-wa/docker-scripts-dev.git
+```
 <BR>
 
 3.Login in to rancher and download the kube config file. 
@@ -23,7 +25,7 @@ In directory c:\users\<home directory>\ create a folder called ".kube".
 
 6.Copy the contents of the file download in step 2 in to c:\users\<home directory>\.kube\config
 
-7. create settings.json file in c:\Users\<home directory>\docker-scripts-dev\kubectl\config\
+7.create settings.json file in c:\Users\<home directory>\docker-scripts-dev\kubectl\config\
    Add the following json content into the file and update namespace to your namespace.
 ```
 {
@@ -31,11 +33,16 @@ In directory c:\users\<home directory>\ create a folder called ".kube".
 }
 ```
 
-8. Test connection by running the following command in c:\Users\<home directory>\docker-scripts-dev\kubectl\
+8.Test connection by running the following command in c:\Users\<home directory>\docker-scripts-dev\kubectl\
 ```
 python get_pods.py
 ```
-If working you should see response "No resources found in karstenprehn namespace." otherwise if pods have already been deployed then will show a list of running pods
+If working you should see response "No resources found in <namespace> namespace." otherwise if pods have already been deployed then will show a list of running pods
 
-9.kubectl is now setup.
+9.kubectl is now setup is now completed
+<br>
+
+10.Deployment Script 
+
+[Deployment Scripts](./DeploymentScript.md)
 
