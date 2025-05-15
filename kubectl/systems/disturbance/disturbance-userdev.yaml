@@ -53,11 +53,11 @@ spec:
           workingDir: /data/data/projects/disturbance/
           resources:
             limits:
-              cpu: '1'
-              memory: 3Gi
+              cpu: '3'
+              memory: 4Gi
             requests:
               cpu: 10m
-              memory: 3Gi          
+              memory: 4Gi          
           securityContext:
             allowPrivilegeEscalation: false
             capabilities:
