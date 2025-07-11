@@ -45,10 +45,7 @@ spec:
               subPath: data                  
             - mountPath: /home/container/
               name: ledgergw-userdev
-              subPath: container  
-            - mountPath: /app/logs/
-              name: ledgergw-userdev
-              subPath: logs                 
+              subPath: container                
           workingDir: /app
           resources:
             limits:
