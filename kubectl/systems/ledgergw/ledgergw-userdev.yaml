@@ -49,7 +49,7 @@ spec:
             - mountPath: /app/logs/
               name: ledgergw-userdev
               subPath: logs                 
-          workingDir: /data/data/projects/ledger/
+          workingDir: /app
           resources:
             limits:
               cpu: '1'
