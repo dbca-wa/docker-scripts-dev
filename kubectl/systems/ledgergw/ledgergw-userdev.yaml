@@ -17,7 +17,7 @@ spec:
       initContainers:
           - name: file-permission-container
             image: busybox
-            command: ["sh", "-c", "mkdir -p /mnt/storage/data; mkdir -p /mnt/storage/container ; chown -R 200000:20000 /mnt/storage/"]              
+            command: ["sh", "-c", "mkdir -p /mnt/storage/data; mkdir -p /mnt/storage/container ; chown -R 200000:20000 /mnt/storage/;chown -R 5000:5000 /app/logs/  "]              
             volumeMounts:
               - name: ledgergw-userdev
                 mountPath: /mnt/storage/
@@ -45,7 +45,10 @@ spec:
               subPath: data                  
             - mountPath: /home/container/
               name: ledgergw-userdev
-              subPath: container   
+              subPath: container  
+            - mountPath: /app/logs/
+              name: ledgergw-userdev
+              subPath: logs                 
           workingDir: /data/data/projects/ledger/
           resources:
             limits:
