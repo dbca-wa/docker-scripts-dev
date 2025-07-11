@@ -17,7 +17,7 @@ spec:
       initContainers:
           - name: file-permission-container
             image: busybox
-            command: ["sh", "-c", "mkdir -p /mnt/storage/data; mkdir -p /mnt/storage/container; mkdir -p /app/logs ; chown -R 200000:20000 /mnt/storage/;chown -R 5000:5000 /app/logs/  "]              
+            command: ["sh", "-c", "mkdir -p /mnt/storage/data; mkdir -p /mnt/storage/container; mkdir -p /app/logs ; chown -R 200000:20000 /mnt/storage/; "]              
             volumeMounts:
               - name: ledgergw-userdev
                 mountPath: /mnt/storage/
@@ -64,8 +64,8 @@ spec:
                 - ALL          
             privileged: false
             readOnlyRootFilesystem: false
-            runAsNonRoot: true
-            runAsUser: 200000           
+            runAsNonRoot: true          
+            runAsUser: 5000 
       volumes:
         - name:  ledgergw-userdev
           persistentVolumeClaim:
