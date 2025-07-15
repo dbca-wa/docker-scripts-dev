@@ -35,7 +35,7 @@ spec:
                 name: {{system}}-{{namespace}}-userdev
                 optional: false                
           name: {{system}}-userdev
-          image: dbcawa/docker_app_dev:boranga_dev_latest 
+          image: dbcawa/docker_app_dev:commercialoperator_dev_latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -50,7 +50,7 @@ spec:
             - mountPath: /home/container/
               name: {{system}}-userdev
               subPath: container   
-          workingDir: /data/data/projects/boranga/
+          workingDir: /data/data/projects/commercialoperator/
           resources:
             limits:
               cpu: '1'
