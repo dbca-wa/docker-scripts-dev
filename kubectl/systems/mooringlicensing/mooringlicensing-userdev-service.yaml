@@ -10,5 +10,5 @@ spec:
       port: 7001
       targetPort: 8080
     - protocol: TCP
-      port: 7001
+      port: 9121
       targetPort: 9121      
