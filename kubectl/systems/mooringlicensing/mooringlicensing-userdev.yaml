@@ -40,7 +40,10 @@ spec:
           ports:
             - containerPort: 8080
               name: tcp8080
-              protocol: TCP
+              protocol: TCP          
+            - containerPort: 9121
+              name: tcp9121
+              protocol: TCP              
           stdin: true          
           tty: true     
           volumeMounts:
