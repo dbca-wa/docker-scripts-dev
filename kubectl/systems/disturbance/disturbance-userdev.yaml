@@ -36,7 +36,6 @@ spec:
                 optional: false                
           name: {{system}}-userdev
           image: dbcawa/docker_app_dev:disturbance_django_5_dev_latest
-          image_old: dbcawa/docker_app_dev:disturbance_dev_2025.05.15.07.3434
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
