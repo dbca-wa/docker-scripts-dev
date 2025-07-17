@@ -9,3 +9,9 @@ spec:
     - protocol: TCP
       port: 7001
       targetPort: 8080
+    - protocol: TCP
+      port: 9021
+      targetPort: 9021
+
+
+      
