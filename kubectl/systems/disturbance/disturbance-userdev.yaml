@@ -53,7 +53,7 @@ spec:
           workingDir: /data/data/projects/disturbance/
           resources:
             limits:
-              cpu: '3'
+              cpu: '2'
               memory: 5Gi
             requests:
               cpu: 10m
