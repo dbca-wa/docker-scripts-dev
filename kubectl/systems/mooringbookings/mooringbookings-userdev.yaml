@@ -35,7 +35,7 @@ spec:
                 name: {{system}}-{{namespace}}-userdev
                 optional: false                
           name: {{system}}-userdev
-          image: dbcawa/docker_app_dev:moorings_dev_2025.07.24.04.3256
+          image: dbcawa/docker_app_dev:moorings_dev_django5_latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
