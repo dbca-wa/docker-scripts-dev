@@ -48,7 +48,10 @@ spec:
               subPath: data                  
             - mountPath: /home/container/
               name: ledgergw-userdev
-              subPath: container                
+              subPath: container   
+            - mountPath: /app/.vscode-server/
+              name: ledgergw-userdev
+              subPath: vscode-server                 
           workingDir: /app
           resources:
             limits:
