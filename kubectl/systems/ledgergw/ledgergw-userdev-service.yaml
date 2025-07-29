@@ -13,5 +13,5 @@ spec:
     - name: ledgergw-userdev-9021
       protocol: TCP
       port: 9021
-      targetPort: 8080
+      targetPort: 9021
       
