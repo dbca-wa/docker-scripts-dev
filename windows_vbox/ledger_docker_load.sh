@@ -2,7 +2,7 @@
 
 SCRIPT=$(readlink -f $0)
 SCRIPTPATH=`dirname $SCRIPT`
-DOCKER_IMAGE="dbcawa/docker_app_dev:ledger_dev_latest"
+DOCKER_IMAGE="ghcr.io/dbca-wa/docker_app_dev:ledger_dev_latest"
 INSTANCE_NAME="ledger-dev"
 CONTAINER_WEB_PORT="7001"
 DEVPORTS="9021-9030"
