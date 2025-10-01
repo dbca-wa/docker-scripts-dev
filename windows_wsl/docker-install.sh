@@ -21,7 +21,11 @@ sudo chown container:container /home/container
 sudo usermod -aG docker container
 sudo usermod -aG sudo  container
 
-wget https://raw.githubusercontent.com/xzzy/docker-scripts-dev/refs/heads/main/windows_wsl/wsl_static_ip.sh -O /etc/wsl_static_ip.sh
+wget https://raw.githubusercontent.com/xzzy/docker-scripts-dev/refs/heads/main/windows_wsl/wsl_check_systemd.sh -O /tmp/wsl_check_systemd.sh
+sudo chmod +x /tmp/wsl_check_systemd.sh
+sudo /tmp/wsl_check_systemd.sh
+
+sudo wget https://raw.githubusercontent.com/xzzy/docker-scripts-dev/refs/heads/main/windows_wsl/wsl_static_ip.sh -O /etc/wsl_static_ip.sh
 sudo chmod +x /etc/wsl_static_ip.sh
 sudo systemctl enable wsl-static-ip.service
 
