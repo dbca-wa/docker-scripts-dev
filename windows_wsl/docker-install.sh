@@ -13,5 +13,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 sudo systemctl restart docker
 
-echo "Run configure wsl with the below command to configure wsl"
-echo "curl https://raw.githubusercontent.com/xzzy/docker-scripts-dev/refs/heads/main/windows_wsl/configure_wsl.sh | bash" 
+echo "";
+echo "";
+echo "Please run configure wsl with the below command to configure wsl";
+echo "curl https://raw.githubusercontent.com/xzzy/docker-scripts-dev/refs/heads/main/windows_wsl/configure_wsl.sh | bash" ;
