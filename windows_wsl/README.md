@@ -34,6 +34,12 @@ wsl --shutdown
 ```
 wsl -d Ubuntu-24.04
 ```
+7. Start WSL Ubuntu instanace
+Run the following command to check the ip config matching the ip in the red box.  If matches your installation is completed
+```
+ifconfig
+```
+<img width="796" height="469" alt="image" src="https://github.com/user-attachments/assets/7e2a98eb-6f60-4e10-b040-0bc7f1ba39bf" />
 
 
 
