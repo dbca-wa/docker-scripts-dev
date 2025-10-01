@@ -41,7 +41,7 @@ ifconfig
 ```
 <img width="796" height="469" alt="image" src="https://github.com/user-attachments/assets/7e2a98eb-6f60-4e10-b040-0bc7f1ba39bf" />
 
-9. Test SSH Key has been installed correctly
+9. Test SSH Key has been installed correctly by running the following command in command prompt.  If successfully you should be logged into your Ubuntu WSL instances
 ```
 ssh -l container 172.29.16.10
 ```
