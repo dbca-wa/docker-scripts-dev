@@ -31,3 +31,9 @@ sudo chmod +x /etc/wsl_static_ip.sh
 sudo wget https://raw.githubusercontent.com/xzzy/docker-scripts-dev/refs/heads/main/windows_wsl/wsl-static-ip.service -O /etc/systemd/system/wsl-static-ip.service
 sudo systemctl enable wsl-static-ip.service
 
+mkdir /data
+mkdir /data/data
+mkdir /data/data/projects
+mkdir /data/data/containerhome
+chown -R container:container /data/data
+
