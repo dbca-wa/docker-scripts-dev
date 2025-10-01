@@ -12,11 +12,11 @@ b). Enter a password at the next prompts
 
 2. Run the docker installation script    
 ```
-curl https://raw.githubusercontent.com/xzzy/docker-scripts-dev/refs/heads/main/windows_wsl/docker-install.sh | bash
+curl https://raw.githubusercontent.com/dbca-wa/docker-scripts-dev/refs/heads/main/windows_wsl/docker-install.sh | bash
 ```
 3. Configure WSL
 ```
-curl https://raw.githubusercontent.com/xzzy/docker-scripts-dev/refs/heads/main/windows_wsl/configure_wsl.sh | bash
+curl https://raw.githubusercontent.com/dbca-wa/docker-scripts-dev/refs/heads/main/windows_wsl/configure_wsl.sh | bash
 ```
 4. Copy the private key that is printed on screen and create a file in windows under C:\Users\<username>\.ssh\id_rsa and copy the content of the private key into this file there should be
 carriage return at the end
