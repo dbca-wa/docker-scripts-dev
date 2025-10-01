@@ -1,5 +1,7 @@
 # Setup Instructions
 
+NOTE: This is taking into account that WSL has been installed with version 2 on your windows machine. 
+
 1. From a command prompt start the wsl instance with 
 ```
 wsl --install Ubuntu-24.04
