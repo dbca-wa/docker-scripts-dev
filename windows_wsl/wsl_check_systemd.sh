@@ -15,3 +15,4 @@ if [ -f "$WSL_CONF" ]; then
 else
     echo -e "[boot]\nsystemd=true" | sudo tee "$WSL_CONF"
     echo "Created /etc/wsl.conf with 'systemd=true'."
+fi
