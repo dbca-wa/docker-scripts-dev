@@ -10,7 +10,7 @@ b). Enter a password at the next prompts
 
 2. Run the docker installation script    
 ```
-curl github.com/xzzy/docker-scripts-dev/blob/main/windows_wsl/docker-install.sh | bash
+curl https://raw.githubusercontent.com/xzzy/docker-scripts-dev/refs/heads/main/windows_wsl/docker-install.sh | bash
 ```
 
 
