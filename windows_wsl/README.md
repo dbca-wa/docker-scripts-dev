@@ -12,16 +12,19 @@ b). Enter a password at the next prompts
 ```
 curl https://raw.githubusercontent.com/xzzy/docker-scripts-dev/refs/heads/main/windows_wsl/docker-install.sh | bash
 ```
-
-3. Exit the ubuntu shell back to the command prompt
+3. Configure WS
+```
+curl https://raw.githubusercontent.com/xzzy/docker-scripts-dev/refs/heads/main/windows_wsl/configure_wsl.sh | bash
+```
+4. Exit the ubuntu shell back to the command prompt
 ```
 exit
 ```
-4. In the command prompt shutdown wsl
+5. In the command prompt shutdown wsl
 ```
 wsl --shutdown
 ```
-5. Start WSL Ubuntu instanace
+6. Start WSL Ubuntu instanace
 ```
 wsl -d Ubuntu-24.04
 ```
