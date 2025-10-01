@@ -41,5 +41,12 @@ ifconfig
 ```
 <img width="796" height="469" alt="image" src="https://github.com/user-attachments/assets/7e2a98eb-6f60-4e10-b040-0bc7f1ba39bf" />
 
+9. Test SSH Key has been installed correctly
+```
+ssh -l container 172.29.16.10
+```
+   
+<img width="955" height="499" alt="image" src="https://github.com/user-attachments/assets/c0941998-4c79-4fb7-9edf-e719cb5fd22e" />
 
+    
 
