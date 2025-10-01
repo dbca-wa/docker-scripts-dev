@@ -12,19 +12,23 @@ b). Enter a password at the next prompts
 ```
 curl https://raw.githubusercontent.com/xzzy/docker-scripts-dev/refs/heads/main/windows_wsl/docker-install.sh | bash
 ```
-3. Configure WS
+3. Configure WSL
 ```
 curl https://raw.githubusercontent.com/xzzy/docker-scripts-dev/refs/heads/main/windows_wsl/configure_wsl.sh | bash
 ```
-4. Exit the ubuntu shell back to the command prompt
+4. Copy the private key that is printed on screen and create a file in windows under C:\Users\<username>\.ssh\id_rsa and copy the content of the private key into this file there should be
+carriage return at the end
+<img width="356" height="80" alt="image" src="https://github.com/user-attachments/assets/a579f8be-7518-4508-b974-f1a0653025d8" />
+
+5. Exit the ubuntu shell back to the command prompt
 ```
 exit
 ```
-5. In the command prompt shutdown wsl
+6. In the command prompt shutdown wsl
 ```
 wsl --shutdown
 ```
-6. Start WSL Ubuntu instanace
+7. Start WSL Ubuntu instanace
 ```
 wsl -d Ubuntu-24.04
 ```
