@@ -1,6 +1,6 @@
 # Setup Instructions
 
-NOTE: This is taking into account that WSL has been installed with version 2 on your windows machine. 
+NOTE: This is taking into account that WSL has been installed with version 2 on your windows machine.  ("wsl --install Ubuntu-24.04")
 
 1. From a command prompt start the wsl instance with 
 ```
@@ -48,5 +48,15 @@ ssh -l container 172.29.16.10
    
 <img width="955" height="499" alt="image" src="https://github.com/user-attachments/assets/c0941998-4c79-4fb7-9edf-e719cb5fd22e" />
 
+
+# Re install Instructions (Doing this will remove your WSL ubuntu instance for a fresh install 
+1.  Shutdown WSL instances
+```
+wsl --shutdown
+```
+2. Unregister to remove your WSL Ubuntu install
+```
+wsl --unregister Ubuntu-24.04
+```
     
 
