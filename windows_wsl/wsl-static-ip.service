@@ -1,0 +1,11 @@
+[Unit]
+Description=Set static IP for eth0 in WSL
+After=network.target
+
+[Service]
+ExecStart=/etc/wsl_static_ip.sh
+Type=oneshot
+RemainAfterExit=true
+
+[Install]
+WantedBy=default.target
