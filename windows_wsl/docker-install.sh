@@ -37,3 +37,5 @@ sudo mkdir /data/data/projects
 sudo mkdir /data/data/containerhome
 sudo chown -R container:container /data/data
 
+sudo su cointainer 
+ssh-keygen -t rsa -b 4096 -N "" -f ~/.ssh/id_rsa
