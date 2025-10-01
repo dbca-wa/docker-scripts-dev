@@ -24,6 +24,6 @@ sudo mkdir /data/data/containerhome
 sudo chown -R container:container /data/data
 
 sudo su -c "su container -c 'ssh-keygen -t rsa -b 4096 -N \"\" -f ~/.ssh/id_rsa'"
-sudo su -c "su container -c 'cat id_rsa.pub > ~/.ssh/authorized_keys'"
+sudo su -c "su container -c 'cat ~/.ssh/id_rsa.pub > ~/.ssh/authorized_keys'"
 sudo su -c "su container -c 'chmod 0700 ~/.ssh/authorized_keys'"
 sudo su -c "su container -c 'cat ~/.ssh/id_rsa'"
