@@ -41,7 +41,15 @@ ifconfig
 ```
 <img width="796" height="469" alt="image" src="https://github.com/user-attachments/assets/7e2a98eb-6f60-4e10-b040-0bc7f1ba39bf" />
 
-9. Test SSH Key has been installed correctly by running the following command in command prompt.  If successfully you should be logged into your Ubuntu WSL instances   
+9.  Change password.   If not already elevated to root use sudo su under dockeradmin account.  The use passwd container to set a password for user container
+    ```
+    sudo su <enter password>
+    ```
+    ```
+    passwd container
+    ```
+    
+11. Test SSH Key has been installed correctly by running the following command in command prompt.  If successfully you should be logged into your Ubuntu WSL instances   
    *DO NOT CLOSE the window on (wsl -d Ubuntu-24.04) as this will stop the running ubuntu service .  The (wsl -d Ubuntu-24.04) terminal window needs to be left open while using ssh or developing in vscode.*
    
 ```
@@ -51,7 +59,7 @@ ssh -l container 172.29.16.10
 <img width="955" height="499" alt="image" src="https://github.com/user-attachments/assets/c0941998-4c79-4fb7-9edf-e719cb5fd22e" />
 
 
-# Re install Instructions (Doing this will remove your WSL ubuntu instance for a fresh install 
+# Re install Instructions (Doing this will remove your WSL ubuntu instance for a fresh install)
 1.  Shutdown WSL instances
 ```
 wsl --shutdown
