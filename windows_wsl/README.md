@@ -42,7 +42,7 @@ ifconfig
 <img width="796" height="469" alt="image" src="https://github.com/user-attachments/assets/7e2a98eb-6f60-4e10-b040-0bc7f1ba39bf" />
 
 9. Test SSH Key has been installed correctly by running the following command in command prompt.  If successfully you should be logged into your Ubuntu WSL instances   
-   *DO NOT CLOSE the window on (wsl -d Ubuntu-24.04) as this will stop the running ubuntu service .  Its need to left open in a terminal window even while developing.*
+   *DO NOT CLOSE the window on (wsl -d Ubuntu-24.04) as this will stop the running ubuntu service .  The (wsl -d Ubuntu-24.04) terminal window needs to be left open while using ssh or developing in vscode.*
    
 ```
 ssh -l container 172.29.16.10
