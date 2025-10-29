@@ -49,7 +49,7 @@ ifconfig
     passwd container
     ```
     
-10.Test SSH Key has been installed correctly by running the following command in command prompt.  If successfully you should be logged into your Ubuntu WSL instances   
+10.Test SSH Key has been installed correctly by running the following command in a fresh windows command prompt.  If successfully, you should be logged into your Ubuntu WSL instances   
    *DO NOT CLOSE the window on (wsl -d Ubuntu-24.04) as this will stop the running ubuntu service .  The (wsl -d Ubuntu-24.04) terminal window needs to be left open while using ssh or developing in vscode.*
    
 ```
