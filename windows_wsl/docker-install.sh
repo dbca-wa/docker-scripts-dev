@@ -6,6 +6,9 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt install docker-ce docker-ce-cli containerd.io -y
 sudo apt install ssh net-tools
 
+sudo systemctl start ssh
+sudo systemctl enable ssh
+
 newgrp docker
 docker version
 sudo systemctl status docker
