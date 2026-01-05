@@ -35,7 +35,7 @@ BFRS Dfes Wrapper: 7030 http://10.17.0.10:7030
 Spatial Layer Monitor: 7031 http://10.17.0.10:7031     
 SSS Maps: 7032 http://10.17.0.10:7032         
 Statdev: 7033 http://10.17.0.10:7033    
-Apiary: 7033 http://10.17.0.10:7034    
+Apiary: 7034 http://10.17.0.10:7034    
 
 **Container Dev Ports**   
 Postgres: 9011-9020 http://10.17.0.10:9011   
